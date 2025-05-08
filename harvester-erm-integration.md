@@ -16,11 +16,11 @@ class IsHarvester(BasePermission):
             return False
 
         decoded_token = jwt.decode(token, options={"verify_signature": False})
-        return decoded_token.get("azp") == os.environ.get("HARVESTER_CLIENT_ID")
+        return decoded_token.get("azp") == os.environ.get("HARVESTER_KEYCLOAK_CLIENT_ID")
 ```
 
 The crucial part is the `azp` claim, which is set to, e.g. `harvester-server` in Keycloak. This claim is used to identify the harvester and allow it to access the ERM API. 
-> _HARVESTER_CLIENT_ID_ is the client ID of the harvester in Keycloak. This is set in the environment variable `HARVESTER_CLIENT_ID`. We must agree on a convention for this, until all system components are deployed on Kubernetes.
+> HARVESTER_KEYCLOAK_CLIENT_ID is the client ID of the harvester in Keycloak. This is set in the environment variable `HARVESTER_KEYCLOAK_CLIENT_ID`. We must agree on a convention for this, until all system components are deployed on Kubernetes.
 
 
 ### Register harvester events
