@@ -38,3 +38,19 @@ The webhook can be accessed at `/api/external/harvester/register-event/` and req
 
 Returns a 201 Event Received response if the event was successfully registered.
 
+
+
+### Submit an order to the harvester
+
+The ERM will submit an order to the harvester via API, specifying the _entity_id_ (order ID for which data is being harvested, a _uuid4_) and the S3 path to the raw data. The harvester will then process the order. 
+
+Submission is triggered by an operator via the respective UI (implemented as step in the order flow). In case the harvesting process fails, the operator will be notified via the UI and/or email, and will then be able to re-submit the order to the harvester.
+
+`... Awaiting API documentation (EOFarm)...`
+
+
+### Query harvester for order data
+
+The ERM must be able to query the harvester, to retrieve the processing status of an order, as well as STAC item URLS/IDs upon completion. Additional metadata may also be included on the completion request, or read from the STAC (up for discussion).
+
+`... Awaiting API documentation (EOFarm)...`
