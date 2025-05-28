@@ -19,7 +19,7 @@ class IsHarvester(BasePermission):
         return decoded_token.get("azp") == os.environ.get("HARVESTER_KEYCLOAK_CLIENT_ID")
 ```
 
-The crucial part is the `azp` claim, which is set to, e.g. `harvester-server` in Keycloak. This claim is used to identify the harvester and allow it to access the ERM API. 
+The crucial part is the `azp` claim, which is set to, e.g. `harvester-server` in Keycloak. This claim is used to identify the harvester and allow it to access the ERM API.
 > HARVESTER_KEYCLOAK_CLIENT_ID is the client ID of the harvester in Keycloak. This is set in the environment variable `HARVESTER_KEYCLOAK_CLIENT_ID`. We must agree on a convention for this, until all system components are deployed on Kubernetes.
 
 
@@ -38,7 +38,12 @@ The webhook can be accessed at `/api/external/harvester/register-event/` and req
 
 Returns a 201 Event Received response if the event was successfully registered.
 
+The following event types are emitted by the Harvester:
 
+| Event Type                  | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| EVENT_HARVESTER_SUCCESS     | Harvester operation has completed successfully |
+| EVENT_HARVESTER_FAILURE     | Harvester operation has failed                 |
 
 ### Submit an order to the harvester
 
