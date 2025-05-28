@@ -1,0 +1,1351 @@
+{
+  "file_system": {
+    "folders": [
+      {
+        "name": "Satellite-Data",
+        "path": "Satellite-Data",
+        "folders": [
+          {
+            "name": "PlanetScope",
+            "path": "Satellite-Data/PlanetScope",
+            "folders": [
+              {
+                "name": "Attika_psscene_basic_analytic_udm2",
+                "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2",
+                "folders": [
+                  {
+                    "name": "PSScene",
+                    "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene",
+                    "folders": [],
+                    "files": [
+                      {
+                        "name": "20240812_083252_22_24a8.json",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8.json"
+                      },
+                      {
+                        "name": "20240812_083252_22_24a8_1A_udm2.tif",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1A_udm2.tif"
+                      },
+                      {
+                        "name": "20240812_083252_22_24a8_1B_AnalyticMS.tif",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1B_AnalyticMS.tif"
+                      },
+                      {
+                        "name": "20240812_083252_22_24a8_1B_AnalyticMS_RPC.TXT",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1B_AnalyticMS_RPC.TXT"
+                      },
+                      {
+                        "name": "20240812_083252_22_24a8_1B_AnalyticMS_metadata.xml",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1B_AnalyticMS_metadata.xml"
+                      },
+                      {
+                        "name": "20240812_083252_22_24a8_metadata.json",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_metadata.json"
+                      },
+                      {
+                        "name": "20240812_083254_45_24a8.json",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8.json"
+                      },
+                      {
+                        "name": "20240812_083254_45_24a8_1A_udm2.tif",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1A_udm2.tif"
+                      },
+                      {
+                        "name": "20240812_083254_45_24a8_1B_AnalyticMS.tif",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1B_AnalyticMS.tif"
+                      },
+                      {
+                        "name": "20240812_083254_45_24a8_1B_AnalyticMS_RPC.TXT",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1B_AnalyticMS_RPC.TXT"
+                      },
+                      {
+                        "name": "20240812_083254_45_24a8_1B_AnalyticMS_metadata.xml",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1B_AnalyticMS_metadata.xml"
+                      },
+                      {
+                        "name": "20240812_083254_45_24a8_metadata.json",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_metadata.json"
+                      },
+                      {
+                        "name": "20240812_083256_68_24a8.json",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8.json"
+                      },
+                      {
+                        "name": "20240812_083256_68_24a8_1A_udm2.tif",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1A_udm2.tif"
+                      },
+                      {
+                        "name": "20240812_083256_68_24a8_1B_AnalyticMS.tif",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1B_AnalyticMS.tif"
+                      },
+                      {
+                        "name": "20240812_083256_68_24a8_1B_AnalyticMS_RPC.TXT",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1B_AnalyticMS_RPC.TXT"
+                      },
+                      {
+                        "name": "20240812_083256_68_24a8_1B_AnalyticMS_metadata.xml",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1B_AnalyticMS_metadata.xml"
+                      },
+                      {
+                        "name": "20240812_083256_68_24a8_metadata.json",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_metadata.json"
+                      },
+                      {
+                        "name": "20240812_083258_91_24a8.json",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8.json"
+                      },
+                      {
+                        "name": "20240812_083258_91_24a8_1A_udm2.tif",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1A_udm2.tif"
+                      },
+                      {
+                        "name": "20240812_083258_91_24a8_1B_AnalyticMS.tif",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1B_AnalyticMS.tif"
+                      },
+                      {
+                        "name": "20240812_083258_91_24a8_1B_AnalyticMS_RPC.TXT",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1B_AnalyticMS_RPC.TXT"
+                      },
+                      {
+                        "name": "20240812_083258_91_24a8_1B_AnalyticMS_metadata.xml",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1B_AnalyticMS_metadata.xml"
+                      },
+                      {
+                        "name": "20240812_083258_91_24a8_metadata.json",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_metadata.json"
+                      },
+                      {
+                        "name": "PSScene_collection.json",
+                        "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/PSScene_collection.json"
+                      }
+                    ],
+                    "stac_items": {
+                      "20240812_083256_68_24a8": {
+                        "metadata": {
+                          "type": "Feature",
+                          "stac_version": "1.0.0",
+                          "id": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a:20240812_083256_68_24a8",
+                          "properties": {
+                            "updated": "2024-08-12T22:04:45Z",
+                            "created": "2024-08-12T15:46:10Z",
+                            "gsd": 3.7,
+                            "constellation": "planetscope",
+                            "platform": "24a8",
+                            "instruments": ["PSB.SD"],
+                            "eo:cloud_cover": 1,
+                            "view:off_nadir": 2,
+                            "view:azimuth": 274,
+                            "view:sun_azimuth": 124,
+                            "view:sun_elevation": 55.2,
+                            "pl:ground_control": true,
+                            "pl:item_type": "PSScene",
+                            "pl:pixel_resolution": 3,
+                            "pl:publishing_stage": "finalized",
+                            "pl:quality_category": "standard",
+                            "pl:strip_id": "7503498",
+                            "published": "2024-08-12T15:46:10Z",
+                            "datetime": "2024-08-12T08:32:56.687252Z",
+                            "elked:order": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a"
+                          },
+                          "geometry": {
+                            "coordinates": [
+                              [
+                                [23.681952625367185, 38.13785207337082],
+                                [23.634138700124453, 37.96518351532657],
+                                [23.9994737414186, 37.90101122706213],
+                                [24.048647079275344, 38.07383376067564],
+                                [23.681952625367185, 38.13785207337082]
+                              ]
+                            ],
+                            "type": "Polygon"
+                          },
+                          "links": [
+                            {
+                              "rel": "root",
+                              "href": "http://pycsw.local/stac",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "collection",
+                              "href": "http://pycsw.local/collections/metadata:main/items/PlanetScope?f=json",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "parent",
+                              "href": "http://pycsw.local/collections/metadata:main/items/PlanetScope?f=json",
+                              "type": "application/json"
+                            }
+                          ],
+                          "assets": {
+                            "20240812_083256_68_24a8_metadata_json": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_metadata.json",
+                              "type": "application/json",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083256_68_24a8_1B_AnalyticMS_metadata_xml": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1B_AnalyticMS_metadata.xml",
+                              "type": "application/xml",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083256_68_24a8_1A_udm2_tif": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1A_udm2.tif",
+                              "type": "image/tiff",
+                              "pl:asset_type": "basic_udm2",
+                              "pl:bundle_type": "basic_analytic_udm2",
+                              "raster:bands": [
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 0.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 100.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 152.0
+                                  }
+                                }
+                              ],
+                              "eo:bands": [
+                                {
+                                  "name": "B1",
+                                  "description": "Clear map (0: not clear, 1: clear)"
+                                },
+                                {
+                                  "name": "B2",
+                                  "description": "Snow map (0: no snow or ice, 1: snow or ice)"
+                                },
+                                {
+                                  "name": "B3",
+                                  "description": "Shadow map (0: no shadow, 1: shadow)"
+                                },
+                                {
+                                  "name": "B4",
+                                  "description": "Light haze map (0: no light haze, 1: light haze)"
+                                },
+                                {
+                                  "name": "B5",
+                                  "description": "Heavy haze map (0: no heavy haze, 1: heavy haze)"
+                                },
+                                {
+                                  "name": "B6",
+                                  "description": "Cloud map (0: no cloud, 1: cloud)"
+                                },
+                                {
+                                  "name": "B7",
+                                  "description": "Confidence map (percentage value: per-pixel algorithmic confidence in classification)"
+                                },
+                                {
+                                  "name": "B8",
+                                  "description": "Unusable pixels"
+                                }
+                              ],
+                              "roles": [
+                                "data",
+                                "snow-ice",
+                                "cloud",
+                                "cloud-shadow"
+                              ]
+                            },
+                            "20240812_083256_68_24a8_1B_AnalyticMS_tif": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1B_AnalyticMS.tif",
+                              "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                              "pl:asset_type": "basic_analytic_4b",
+                              "pl:bundle_type": "basic_analytic_udm2",
+                              "raster:bands": [
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 3554.0,
+                                    "maximum": 40003.0
+                                  },
+                                  "scale": 1.9952341553685133e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 1964.0,
+                                    "maximum": 45529.0
+                                  },
+                                  "scale": 2.1639864095990433e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 1283.0,
+                                    "maximum": 56521.0
+                                  },
+                                  "scale": 2.604656406639124e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 1.0,
+                                    "maximum": 65535.0
+                                  },
+                                  "scale": 4.122516181175615e-5
+                                }
+                              ],
+                              "eo:bands": [
+                                {
+                                  "name": "Blue",
+                                  "common_name": "blue",
+                                  "center_wavelength": 0.49,
+                                  "full_width_half_max": 0.05
+                                },
+                                {
+                                  "name": "Green",
+                                  "common_name": "green",
+                                  "center_wavelength": 0.565,
+                                  "full_width_half_max": 0.036
+                                },
+                                {
+                                  "name": "Red",
+                                  "common_name": "red",
+                                  "center_wavelength": 0.665,
+                                  "full_width_half_max": 0.03
+                                },
+                                {
+                                  "name": "Near-Infrared",
+                                  "common_name": "nir",
+                                  "center_wavelength": 0.865,
+                                  "full_width_half_max": 0.04
+                                }
+                              ],
+                              "roles": ["data"]
+                            },
+                            "20240812_083256_68_24a8_json": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8.json",
+                              "type": "application/json",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083256_68_24a8_1B_AnalyticMS_RPC_TXT": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1B_AnalyticMS_RPC.TXT",
+                              "type": "text/plain",
+                              "roles": ["metadata"]
+                            }
+                          },
+                          "bbox": [
+                            23.634138700124453, 37.90101122706213,
+                            24.048647079275344, 38.13785207337082
+                          ],
+                          "stac_extensions": [
+                            "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+                            "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+                            "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+                          ],
+                          "collection": "PlanetScope"
+                        },
+                        "metadata_source": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8.json",
+                        "assets": [
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8.json",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1A_udm2.tif",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1B_AnalyticMS.tif",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1B_AnalyticMS_RPC.TXT",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_1B_AnalyticMS_metadata.xml",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083256_68_24a8_metadata.json"
+                        ]
+                      },
+                      "20240812_083258_91_24a8": {
+                        "metadata": {
+                          "type": "Feature",
+                          "stac_version": "1.0.0",
+                          "id": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a:20240812_083258_91_24a8",
+                          "properties": {
+                            "updated": "2024-08-12T22:04:45Z",
+                            "created": "2024-08-12T15:46:08Z",
+                            "gsd": 3.7,
+                            "constellation": "planetscope",
+                            "platform": "24a8",
+                            "instruments": ["PSB.SD"],
+                            "eo:cloud_cover": 5,
+                            "view:off_nadir": 2,
+                            "view:azimuth": 273.8,
+                            "view:sun_azimuth": 123.8,
+                            "view:sun_elevation": 55.2,
+                            "pl:ground_control": true,
+                            "pl:item_type": "PSScene",
+                            "pl:pixel_resolution": 3,
+                            "pl:publishing_stage": "finalized",
+                            "pl:quality_category": "standard",
+                            "pl:strip_id": "7503498",
+                            "published": "2024-08-12T15:46:08Z",
+                            "datetime": "2024-08-12T08:32:58.919146Z",
+                            "elked:order": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a"
+                          },
+                          "geometry": {
+                            "coordinates": [
+                              [
+                                [23.643260211078076, 37.99707849138447],
+                                [23.59554543184188, 37.82421836383059],
+                                [23.960221847239144, 37.760159125847366],
+                                [24.00920674569738, 37.93297337591904],
+                                [23.643260211078076, 37.99707849138447]
+                              ]
+                            ],
+                            "type": "Polygon"
+                          },
+                          "links": [
+                            {
+                              "rel": "root",
+                              "href": "http://pycsw.local/stac",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "collection",
+                              "href": "http://pycsw.local/collections/metadata:main/items/PlanetScope?f=json",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "parent",
+                              "href": "http://pycsw.local/collections/metadata:main/items/PlanetScope?f=json",
+                              "type": "application/json"
+                            }
+                          ],
+                          "assets": {
+                            "20240812_083258_91_24a8_metadata_json": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_metadata.json",
+                              "type": "application/json",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083258_91_24a8_1B_AnalyticMS_metadata_xml": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1B_AnalyticMS_metadata.xml",
+                              "type": "application/xml",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083258_91_24a8_1A_udm2_tif": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1A_udm2.tif",
+                              "type": "image/tiff",
+                              "pl:asset_type": "basic_udm2",
+                              "pl:bundle_type": "basic_analytic_udm2",
+                              "raster:bands": [
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 0.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 100.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 152.0
+                                  }
+                                }
+                              ],
+                              "eo:bands": [
+                                {
+                                  "name": "B1",
+                                  "description": "Clear map (0: not clear, 1: clear)"
+                                },
+                                {
+                                  "name": "B2",
+                                  "description": "Snow map (0: no snow or ice, 1: snow or ice)"
+                                },
+                                {
+                                  "name": "B3",
+                                  "description": "Shadow map (0: no shadow, 1: shadow)"
+                                },
+                                {
+                                  "name": "B4",
+                                  "description": "Light haze map (0: no light haze, 1: light haze)"
+                                },
+                                {
+                                  "name": "B5",
+                                  "description": "Heavy haze map (0: no heavy haze, 1: heavy haze)"
+                                },
+                                {
+                                  "name": "B6",
+                                  "description": "Cloud map (0: no cloud, 1: cloud)"
+                                },
+                                {
+                                  "name": "B7",
+                                  "description": "Confidence map (percentage value: per-pixel algorithmic confidence in classification)"
+                                },
+                                {
+                                  "name": "B8",
+                                  "description": "Unusable pixels"
+                                }
+                              ],
+                              "roles": [
+                                "data",
+                                "snow-ice",
+                                "cloud",
+                                "cloud-shadow"
+                              ]
+                            },
+                            "20240812_083258_91_24a8_1B_AnalyticMS_tif": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1B_AnalyticMS.tif",
+                              "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                              "pl:asset_type": "basic_analytic_4b",
+                              "pl:bundle_type": "basic_analytic_udm2",
+                              "raster:bands": [
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 3578.0,
+                                    "maximum": 38026.0
+                                  },
+                                  "scale": 1.99380622811822e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 2065.0,
+                                    "maximum": 45387.0
+                                  },
+                                  "scale": 2.1624377115902323e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 1058.0,
+                                    "maximum": 59028.0
+                                  },
+                                  "scale": 2.602792334770324e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 98.0,
+                                    "maximum": 65535.0
+                                  },
+                                  "scale": 4.119565824106477e-5
+                                }
+                              ],
+                              "eo:bands": [
+                                {
+                                  "name": "Blue",
+                                  "common_name": "blue",
+                                  "center_wavelength": 0.49,
+                                  "full_width_half_max": 0.05
+                                },
+                                {
+                                  "name": "Green",
+                                  "common_name": "green",
+                                  "center_wavelength": 0.565,
+                                  "full_width_half_max": 0.036
+                                },
+                                {
+                                  "name": "Red",
+                                  "common_name": "red",
+                                  "center_wavelength": 0.665,
+                                  "full_width_half_max": 0.03
+                                },
+                                {
+                                  "name": "Near-Infrared",
+                                  "common_name": "nir",
+                                  "center_wavelength": 0.865,
+                                  "full_width_half_max": 0.04
+                                }
+                              ],
+                              "roles": ["data"]
+                            },
+                            "20240812_083258_91_24a8_json": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8.json",
+                              "type": "application/json",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083258_91_24a8_1B_AnalyticMS_RPC_TXT": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1B_AnalyticMS_RPC.TXT",
+                              "type": "text/plain",
+                              "roles": ["metadata"]
+                            }
+                          },
+                          "bbox": [
+                            23.59554543184188, 37.760159125847366,
+                            24.00920674569738, 37.99707849138447
+                          ],
+                          "stac_extensions": [
+                            "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+                            "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+                            "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+                          ],
+                          "collection": "PlanetScope"
+                        },
+                        "metadata_source": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8.json",
+                        "assets": [
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8.json",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1A_udm2.tif",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1B_AnalyticMS.tif",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1B_AnalyticMS_RPC.TXT",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_1B_AnalyticMS_metadata.xml",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083258_91_24a8_metadata.json"
+                        ]
+                      },
+                      "20240812_083254_45_24a8": {
+                        "metadata": {
+                          "type": "Feature",
+                          "stac_version": "1.0.0",
+                          "id": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a:20240812_083254_45_24a8",
+                          "properties": {
+                            "updated": "2024-08-12T22:04:45Z",
+                            "created": "2024-08-12T15:46:39Z",
+                            "gsd": 3.7,
+                            "constellation": "planetscope",
+                            "platform": "24a8",
+                            "instruments": ["PSB.SD"],
+                            "eo:cloud_cover": 1,
+                            "view:off_nadir": 2,
+                            "view:azimuth": 273.6,
+                            "view:sun_azimuth": 124.2,
+                            "view:sun_elevation": 55.1,
+                            "pl:ground_control": true,
+                            "pl:item_type": "PSScene",
+                            "pl:pixel_resolution": 3,
+                            "pl:publishing_stage": "finalized",
+                            "pl:quality_category": "standard",
+                            "pl:strip_id": "7503498",
+                            "published": "2024-08-12T15:46:39Z",
+                            "datetime": "2024-08-12T08:32:54.455359Z",
+                            "elked:order": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a"
+                          },
+                          "geometry": {
+                            "coordinates": [
+                              [
+                                [23.72111831647961, 38.27893564235334],
+                                [23.673134205861565, 38.10610014098377],
+                                [24.039204520631202, 38.041759388706296],
+                                [24.088513725110225, 38.21463090946595],
+                                [23.72111831647961, 38.27893564235334]
+                              ]
+                            ],
+                            "type": "Polygon"
+                          },
+                          "links": [
+                            {
+                              "rel": "root",
+                              "href": "http://pycsw.local/stac",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "collection",
+                              "href": "http://pycsw.local/collections/metadata:main/items/PlanetScope?f=json",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "parent",
+                              "href": "http://pycsw.local/collections/metadata:main/items/PlanetScope?f=json",
+                              "type": "application/json"
+                            }
+                          ],
+                          "assets": {
+                            "20240812_083254_45_24a8_metadata_json": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_metadata.json",
+                              "type": "application/json",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083254_45_24a8_1B_AnalyticMS_metadata_xml": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1B_AnalyticMS_metadata.xml",
+                              "type": "application/xml",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083254_45_24a8_1A_udm2_tif": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1A_udm2.tif",
+                              "type": "image/tiff",
+                              "pl:asset_type": "basic_udm2",
+                              "pl:bundle_type": "basic_analytic_udm2",
+                              "raster:bands": [
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 0.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 100.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 4.0
+                                  }
+                                }
+                              ],
+                              "eo:bands": [
+                                {
+                                  "name": "B1",
+                                  "description": "Clear map (0: not clear, 1: clear)"
+                                },
+                                {
+                                  "name": "B2",
+                                  "description": "Snow map (0: no snow or ice, 1: snow or ice)"
+                                },
+                                {
+                                  "name": "B3",
+                                  "description": "Shadow map (0: no shadow, 1: shadow)"
+                                },
+                                {
+                                  "name": "B4",
+                                  "description": "Light haze map (0: no light haze, 1: light haze)"
+                                },
+                                {
+                                  "name": "B5",
+                                  "description": "Heavy haze map (0: no heavy haze, 1: heavy haze)"
+                                },
+                                {
+                                  "name": "B6",
+                                  "description": "Cloud map (0: no cloud, 1: cloud)"
+                                },
+                                {
+                                  "name": "B7",
+                                  "description": "Confidence map (percentage value: per-pixel algorithmic confidence in classification)"
+                                },
+                                {
+                                  "name": "B8",
+                                  "description": "Unusable pixels"
+                                }
+                              ],
+                              "roles": [
+                                "data",
+                                "snow-ice",
+                                "cloud",
+                                "cloud-shadow"
+                              ]
+                            },
+                            "20240812_083254_45_24a8_1B_AnalyticMS_tif": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1B_AnalyticMS.tif",
+                              "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                              "pl:asset_type": "basic_analytic_4b",
+                              "pl:bundle_type": "basic_analytic_udm2",
+                              "raster:bands": [
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 3147.0,
+                                    "maximum": 28003.0
+                                  },
+                                  "scale": 1.9966763735570105e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 1955.0,
+                                    "maximum": 28890.0
+                                  },
+                                  "scale": 2.165550607240301e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 1003.0,
+                                    "maximum": 36803.0
+                                  },
+                                  "scale": 2.6065391344554722e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 1.0,
+                                    "maximum": 65535.0
+                                  },
+                                  "scale": 4.1254960659189006e-5
+                                }
+                              ],
+                              "eo:bands": [
+                                {
+                                  "name": "Blue",
+                                  "common_name": "blue",
+                                  "center_wavelength": 0.49,
+                                  "full_width_half_max": 0.05
+                                },
+                                {
+                                  "name": "Green",
+                                  "common_name": "green",
+                                  "center_wavelength": 0.565,
+                                  "full_width_half_max": 0.036
+                                },
+                                {
+                                  "name": "Red",
+                                  "common_name": "red",
+                                  "center_wavelength": 0.665,
+                                  "full_width_half_max": 0.03
+                                },
+                                {
+                                  "name": "Near-Infrared",
+                                  "common_name": "nir",
+                                  "center_wavelength": 0.865,
+                                  "full_width_half_max": 0.04
+                                }
+                              ],
+                              "roles": ["data"]
+                            },
+                            "20240812_083254_45_24a8_json": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8.json",
+                              "type": "application/json",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083254_45_24a8_1B_AnalyticMS_RPC_TXT": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1B_AnalyticMS_RPC.TXT",
+                              "type": "text/plain",
+                              "roles": ["metadata"]
+                            }
+                          },
+                          "bbox": [
+                            23.673134205861565, 38.041759388706296,
+                            24.088513725110225, 38.27893564235334
+                          ],
+                          "stac_extensions": [
+                            "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+                            "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+                            "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+                          ],
+                          "collection": "PlanetScope"
+                        },
+                        "metadata_source": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8.json",
+                        "assets": [
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8.json",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1A_udm2.tif",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1B_AnalyticMS.tif",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1B_AnalyticMS_RPC.TXT",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_1B_AnalyticMS_metadata.xml",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083254_45_24a8_metadata.json"
+                        ]
+                      },
+                      "20240812_083252_22_24a8": {
+                        "metadata": {
+                          "type": "Feature",
+                          "stac_version": "1.0.0",
+                          "id": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a:20240812_083252_22_24a8",
+                          "properties": {
+                            "updated": "2024-08-12T22:04:45Z",
+                            "created": "2024-08-12T15:46:03Z",
+                            "gsd": 3.7,
+                            "constellation": "planetscope",
+                            "platform": "24a8",
+                            "instruments": ["PSB.SD"],
+                            "eo:cloud_cover": 0,
+                            "view:off_nadir": 2,
+                            "view:azimuth": 273.6,
+                            "view:sun_azimuth": 124.4,
+                            "view:sun_elevation": 55.1,
+                            "pl:ground_control": true,
+                            "pl:item_type": "PSScene",
+                            "pl:pixel_resolution": 3,
+                            "pl:publishing_stage": "finalized",
+                            "pl:quality_category": "standard",
+                            "pl:strip_id": "7503498",
+                            "published": "2024-08-12T15:46:03Z",
+                            "datetime": "2024-08-12T08:32:52.223410Z",
+                            "elked:order": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a"
+                          },
+                          "geometry": {
+                            "coordinates": [
+                              [
+                                [23.760146185239428, 38.41968591142552],
+                                [23.712001891701767, 38.24686978533713],
+                                [24.07878949373806, 38.18252049540499],
+                                [24.12821615137888, 38.3553401693967],
+                                [23.760146185239428, 38.41968591142552]
+                              ]
+                            ],
+                            "type": "Polygon"
+                          },
+                          "links": [
+                            {
+                              "rel": "root",
+                              "href": "http://pycsw.local/stac",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "collection",
+                              "href": "http://pycsw.local/collections/metadata:main/items/PlanetScope?f=json",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "parent",
+                              "href": "http://pycsw.local/collections/metadata:main/items/PlanetScope?f=json",
+                              "type": "application/json"
+                            }
+                          ],
+                          "assets": {
+                            "20240812_083252_22_24a8_metadata_json": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_metadata.json",
+                              "type": "application/json",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083252_22_24a8_1B_AnalyticMS_metadata_xml": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1B_AnalyticMS_metadata.xml",
+                              "type": "application/xml",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083252_22_24a8_1A_udm2_tif": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1A_udm2.tif",
+                              "type": "image/tiff",
+                              "pl:asset_type": "basic_udm2",
+                              "pl:bundle_type": "basic_analytic_udm2",
+                              "raster:bands": [
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 0.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 0.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 1.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 100.0
+                                  }
+                                },
+                                {
+                                  "data_type": "uint8",
+                                  "statistics": {
+                                    "minimum": 0.0,
+                                    "maximum": 2.0
+                                  }
+                                }
+                              ],
+                              "eo:bands": [
+                                {
+                                  "name": "B1",
+                                  "description": "Clear map (0: not clear, 1: clear)"
+                                },
+                                {
+                                  "name": "B2",
+                                  "description": "Snow map (0: no snow or ice, 1: snow or ice)"
+                                },
+                                {
+                                  "name": "B3",
+                                  "description": "Shadow map (0: no shadow, 1: shadow)"
+                                },
+                                {
+                                  "name": "B4",
+                                  "description": "Light haze map (0: no light haze, 1: light haze)"
+                                },
+                                {
+                                  "name": "B5",
+                                  "description": "Heavy haze map (0: no heavy haze, 1: heavy haze)"
+                                },
+                                {
+                                  "name": "B6",
+                                  "description": "Cloud map (0: no cloud, 1: cloud)"
+                                },
+                                {
+                                  "name": "B7",
+                                  "description": "Confidence map (percentage value: per-pixel algorithmic confidence in classification)"
+                                },
+                                {
+                                  "name": "B8",
+                                  "description": "Unusable pixels"
+                                }
+                              ],
+                              "roles": [
+                                "data",
+                                "snow-ice",
+                                "cloud",
+                                "cloud-shadow"
+                              ]
+                            },
+                            "20240812_083252_22_24a8_1B_AnalyticMS_tif": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1B_AnalyticMS.tif",
+                              "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                              "pl:asset_type": "basic_analytic_4b",
+                              "pl:bundle_type": "basic_analytic_udm2",
+                              "raster:bands": [
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 3528.0,
+                                    "maximum": 26787.0
+                                  },
+                                  "scale": 1.998133067191082e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 1976.0,
+                                    "maximum": 25814.0
+                                  },
+                                  "scale": 2.1671305046265794e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 951.0,
+                                    "maximum": 34793.0
+                                  },
+                                  "scale": 2.6084407590824796e-5
+                                },
+                                {
+                                  "nodata": 0.0,
+                                  "data_type": "uint16",
+                                  "statistics": {
+                                    "minimum": 1.0,
+                                    "maximum": 65535.0
+                                  },
+                                  "scale": 4.128505859562077e-5
+                                }
+                              ],
+                              "eo:bands": [
+                                {
+                                  "name": "Blue",
+                                  "common_name": "blue",
+                                  "center_wavelength": 0.49,
+                                  "full_width_half_max": 0.05
+                                },
+                                {
+                                  "name": "Green",
+                                  "common_name": "green",
+                                  "center_wavelength": 0.565,
+                                  "full_width_half_max": 0.036
+                                },
+                                {
+                                  "name": "Red",
+                                  "common_name": "red",
+                                  "center_wavelength": 0.665,
+                                  "full_width_half_max": 0.03
+                                },
+                                {
+                                  "name": "Near-Infrared",
+                                  "common_name": "nir",
+                                  "center_wavelength": 0.865,
+                                  "full_width_half_max": 0.04
+                                }
+                              ],
+                              "roles": ["data"]
+                            },
+                            "20240812_083252_22_24a8_json": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8.json",
+                              "type": "application/json",
+                              "roles": ["metadata"]
+                            },
+                            "20240812_083252_22_24a8_1B_AnalyticMS_RPC_TXT": {
+                              "href": "https://s3.eu-central-1.amazonaws.com/hsc-dev-1-workspace/Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1B_AnalyticMS_RPC.TXT",
+                              "type": "text/plain",
+                              "roles": ["metadata"]
+                            }
+                          },
+                          "bbox": [
+                            23.712001891701767, 38.18252049540499,
+                            24.12821615137888, 38.41968591142552
+                          ],
+                          "stac_extensions": [
+                            "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+                            "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+                            "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+                          ],
+                          "collection": "PlanetScope"
+                        },
+                        "metadata_source": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8.json",
+                        "assets": [
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8.json",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1A_udm2.tif",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1B_AnalyticMS.tif",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1B_AnalyticMS_RPC.TXT",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_1B_AnalyticMS_metadata.xml",
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/20240812_083252_22_24a8_metadata.json"
+                        ]
+                      },
+                      "PSScene_collection": {
+                        "metadata": {
+                          "type": "Collection",
+                          "id": "118c0429-f09b-4c0c-aa71-6fe850633bad: PSScene",
+                          "stac_version": "1.0.0",
+                          "description": "PSScene",
+                          "links": [
+                            {
+                              "rel": "root",
+                              "href": "../catalog.json",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "item",
+                              "href": "./20240812_083252_22_24a8.json",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "item",
+                              "href": "./20240812_083254_45_24a8.json",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "item",
+                              "href": "./20240812_083258_91_24a8.json",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "item",
+                              "href": "./20240812_083256_68_24a8.json",
+                              "type": "application/json"
+                            },
+                            {
+                              "rel": "parent",
+                              "href": "../catalog.json",
+                              "type": "application/json"
+                            }
+                          ],
+                          "pl:item_type": "PSScene",
+                          "extent": {
+                            "spatial": {
+                              "bbox": [
+                                [
+                                  23.59554543184188, 37.760159125847366,
+                                  24.12821615137888, 38.41968591142552
+                                ]
+                              ]
+                            },
+                            "temporal": {
+                              "interval": [
+                                [
+                                  "2024-08-12T08:32:52.223410Z",
+                                  "2024-08-12T08:32:58.919146Z"
+                                ]
+                              ]
+                            }
+                          },
+                          "license": "proprietary"
+                        },
+                        "metadata_source": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/PSScene_collection.json",
+                        "assets": [
+                          "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/PSScene_collection.json"
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "files": [
+                  {
+                    "name": "catalog.json",
+                    "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/catalog.json"
+                  },
+                  {
+                    "name": "manifest.json",
+                    "path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/manifest.json"
+                  }
+                ],
+                "stac_items": {
+                  "catalog": {
+                    "metadata": {
+                      "type": "Catalog",
+                      "id": "118c0429-f09b-4c0c-aa71-6fe850633bad",
+                      "stac_version": "1.0.0",
+                      "description": "Attika",
+                      "links": [
+                        {
+                          "rel": "root",
+                          "href": "./catalog.json",
+                          "type": "application/json"
+                        },
+                        {
+                          "rel": "child",
+                          "href": "./PSScene/PSScene_collection.json",
+                          "type": "application/json"
+                        }
+                      ]
+                    },
+                    "metadata_source": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/catalog.json",
+                    "assets": [
+                      "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/catalog.json"
+                    ]
+                  }
+                }
+              }
+            ],
+            "files": [],
+            "stac_items": {}
+          }
+        ],
+        "files": [],
+        "stac_items": {}
+      }
+    ],
+    "files": [],
+    "ignoredFiles": [
+      "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2/PSScene/Thumbs.db"
+    ],
+    "stac_items": {}
+  },
+  "links": [
+    "http://pycsw.local/collections/PlanetScope/items/99bfa0a6-5557-4a5b-85b7-7f035e830b3a:20240812_083256_68_24a8?f=json",
+    "http://pycsw.local/collections/PlanetScope/items/99bfa0a6-5557-4a5b-85b7-7f035e830b3a:20240812_083258_91_24a8?f=json",
+    "http://pycsw.local/collections/PlanetScope/items/99bfa0a6-5557-4a5b-85b7-7f035e830b3a:20240812_083254_45_24a8?f=json",
+    "http://pycsw.local/collections/PlanetScope/items/99bfa0a6-5557-4a5b-85b7-7f035e830b3a:20240812_083252_22_24a8?f=json"
+  ],
+  "variables": {
+    "business_key": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a",
+    "s3_path": "Satellite-Data/PlanetScope/Attika_psscene_basic_analytic_udm2",
+    "order_id": "99bfa0a6-5557-4a5b-85b7-7f035e830b3a",
+    "provider": "PLANET_SCOPE",
+    "stac_collection": "PlanetScope"
+  }
+}

@@ -47,15 +47,50 @@ The following event types are emitted by the Harvester:
 
 ### Submit an order to the harvester
 
-The ERM will submit an order to the harvester via API, specifying the _entity_id_ (order ID for which data is being harvested, a _uuid4_) and the S3 path to the raw data. The harvester will then process the order. 
+The ERM will submit an order to the harvester via API, specifying the _order_id_ (order ID for which data is being harvested, a _uuid4_) and the S3 path to the raw data. The harvester will then process the order.
 
 Submission is triggered by an operator via the respective UI (implemented as step in the order flow). In case the harvesting process fails, the operator will be notified via the UI and/or email, and will then be able to re-submit the order to the harvester.
 
-`... Awaiting API documentation (EOFarm)...`
+An order can be submitted at `{{flowable-url}}/action/process-instances` using the `POST` HTTP method with a request body as shown next. Although the property `businessKey`
+and the variable `order_id` have the same value, both **MUST** be set.
 
+```json
+{
+    "businessKey": "{{flowable-business-key}}",
+    "processDefinitionKey": "bpmn-process-eo-data",
+    "variables": [{
+        "name": "provider",
+        "value":"PLANET_SCOPE",
+        "type": "STRING"
+    },{
+        "name": "s3_path",
+        "value":"PlanetScope/athens_basic_analytics",
+        "type": "STRING"
+    }, {
+        "name": "order_id",
+        "value":"{{flowable-business-key}}",
+        "type": "STRING"
+    }]
+}
+```
+
+The provider can be one of the following values:
+
+| Key              | Provider           | STAC Collection    |
+|:-----------------|:-------------------|:-------------------|
+| AIRBUS           | Airbus             | Airbus             |
+| CADASTRE         | Cadastre           | Cadastre           |
+| CAPELLA          | Capella            | Capella            |
+| ICEYE            | ICEYE              | ICEYE              |
+| MAXAR            | Maxar              | Maxar              |
+| ORORA_TECH       | OroraTech          | OroraTech          |
+| PLANET_SCOPE     | PlanetScope        | PlanetScope        |
+| SKY_SAT          | SkySat             | SkySat             |
 
 ### Query harvester for order data
 
 The ERM must be able to query the harvester, to retrieve the processing status of an order, as well as STAC item URLS/IDs upon completion. Additional metadata may also be included on the completion request, or read from the STAC (up for discussion).
 
-`... Awaiting API documentation (EOFarm)...`
+The results of a Harvester operation can be retrieved at `{{flowable-url}}/extensions/erm/orders/{{flowable-business-key}}` using the `GET` HTTP method.
+
+A sample of the response can be found [here](./services/harvester/samples/harvester-sabmple-response-plantescope.json)
