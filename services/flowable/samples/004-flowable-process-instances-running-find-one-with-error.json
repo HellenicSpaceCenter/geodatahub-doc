@@ -1,0 +1,51 @@
+{
+  "messages": [],
+  "result": {
+    "activities": [
+      {
+        "id": "0af8a030-3c7d-11f0-938d-1e2cd2440bca",
+        "activityId": "task-create-stac-items",
+        "activityName": "Create STAC items",
+        "activityType": "externalWorkerServiceTask",
+        "executionId": "0af8a02d-3c7d-11f0-938d-1e2cd2440bca",
+        "taskId": null,
+        "startTime": "2025-05-29T11:07:00.113+00:00",
+        "endTime": null,
+        "durationInMillis": null
+      }
+    ],
+    "deadLetterJobs": [
+      {
+        "id": "0af8a032-3c7d-11f0-938d-1e2cd2440bca",
+        "executionId": "0af8a02d-3c7d-11f0-938d-1e2cd2440bca",
+        "jobType": "externalWorker",
+        "elementId": "task-create-stac-items",
+        "elementName": "Create STAC items",
+        "exclusive": true,
+        "createTime": "2025-05-29T12:29:47.517+00:00"
+      }
+    ],
+    "instance": {
+      "id": "0af87914-3c7d-11f0-938d-1e2cd2440bca",
+      "businessKey": "06fa9c49-3724-4948-881a-0df7e4d87730",
+      "processDefinitionKey": "bpmn-process-eo-data",
+      "processDefinitionName": "Process EO Data",
+      "processDefinitionVersion": 4,
+      "startTime": "2025-05-29T11:07:00.112+00:00",
+      "endTime": null,
+      "durationInMillis": null,
+      "startActivityId": null,
+      "endActivityId": null
+    },
+    "variables": {
+      "provider": "CAPELLA",
+      "s3_path": "Satellite-Data/Capella/CAPELLA_C09_SM_HH_20241004131736_20241004131738",
+      "initiator": "",
+      "order_id": "06fa9c49-3724-4948-881a-0df7e4d87730"
+    },
+    "errorDetails": {
+      "task-create-stac-items": "[Error Code] HARVESTER-0012 [Message] Failed to store result for order [06fa9c49-3724-4948-881a-0df7e4d87730] [Reason] Object of type complex is not JSON serializable"
+    }
+  },
+  "success": true
+}

@@ -1,0 +1,61 @@
+{
+  "messages": [],
+  "result": {
+    "activities": [
+      {
+        "id": "aa97da26-389b-11f0-bf69-3ebdd6259ab1",
+        "activityId": "task-create-stac-items",
+        "activityName": "Create STAC items",
+        "activityType": "externalWorkerServiceTask",
+        "executionId": "aa9764f3-389b-11f0-bf69-3ebdd6259ab1",
+        "taskId": null,
+        "startTime": "2025-05-24T12:36:08.165+00:00",
+        "endTime": "2025-05-24T12:36:17.434+00:00",
+        "durationInMillis": 9269
+      },
+      {
+        "id": "b01ea5aa-389b-11f0-bf69-3ebdd6259ab1",
+        "activityId": "task-publish-stack-items",
+        "activityName": "Publish STAC items to the Catalogue",
+        "activityType": "externalWorkerServiceTask",
+        "executionId": "aa9764f3-389b-11f0-bf69-3ebdd6259ab1",
+        "taskId": null,
+        "startTime": "2025-05-24T12:36:17.437+00:00",
+        "endTime": "2025-05-24T12:36:26.613+00:00",
+        "durationInMillis": 9176
+      },
+      {
+        "id": "b597405e-389b-11f0-bf69-3ebdd6259ab1",
+        "activityId": "task-send-harvester-success-event",
+        "activityName": "Notify Success",
+        "activityType": "externalWorkerServiceTask",
+        "executionId": "aa9764f3-389b-11f0-bf69-3ebdd6259ab1",
+        "taskId": null,
+        "startTime": "2025-05-24T12:36:26.616+00:00",
+        "endTime": "2025-05-24T12:36:27.698+00:00",
+        "durationInMillis": 1082
+      }
+    ],
+    "deadLetterJobs": [],
+    "instance": {
+      "id": "aa9716ca-389b-11f0-bf69-3ebdd6259ab1",
+      "businessKey": "1a180f7f-c644-4310-8f90-91a834862988",
+      "processDefinitionKey": "bpmn-process-eo-data",
+      "processDefinitionName": "Process EO Data",
+      "processDefinitionVersion": 19,
+      "startTime": "2025-05-24T12:36:08.160+00:00",
+      "endTime": "2025-05-24T12:36:27.722+00:00",
+      "durationInMillis": 19562,
+      "startActivityId": "startnoneevent1",
+      "endActivityId": "EndNoneEvent_10"
+    },
+    "variables": {
+      "provider": "PLANET_SCOPE",
+      "s3_path": "PlanetScope/Attika_psscene_basic_analytic_udm2",
+      "initiator": "",
+      "order_id": "1a180f7f-c644-4310-8f90-91a834862988"
+    },
+    "errorDetails": {}
+  },
+  "success": true
+}
