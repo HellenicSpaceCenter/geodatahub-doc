@@ -93,4 +93,4 @@ The ERM must be able to query the harvester, to retrieve the processing status o
 
 The results of a Harvester operation can be retrieved at `{{flowable-url}}/extensions/erm/orders/{{flowable-business-key}}` using the `GET` HTTP method.
 
-A sample of the response can be found [here](./services/harvester/samples/harvester-sabmple-response-plantescope.json)
+A sample of the response can be found [here](./services/harvester/samples/harvester-sample-response-plantescope.json)
