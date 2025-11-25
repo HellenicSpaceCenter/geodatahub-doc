@@ -1,0 +1,28 @@
+{
+    "messages": [],
+    "result": {
+        "files": [
+            [
+                "hsc-dev-1-workspace",
+                "Satellite-Data/OroraTech/20240716_0212/F002_L1__IR__L2L1M0__2024-07-15T231153.038502Z_2024-07-17T215808.919232Z_3a655040_1721253590.557983_DG-Img2Map-IR1_0.4.0_afd06dabb0ab58d5_LWIR1.tif"
+            ],
+            [
+                "hsc-dev-1-workspace",
+                "Satellite-Data/OroraTech/20240716_0212/F002_L1__IR__L2L1M0__2024-07-15T231153.038502Z_2024-07-17T215808.919232Z_3a655040_1721253590.557983_DG-Img2Map-IR1_0.4.0_afd06dabb0ab58d5_LWIR2.tif"
+            ],
+            [
+                "hsc-dev-1-workspace",
+                "Satellite-Data/OroraTech/Forest-2_GR_18_20-07-2024/2024-07-19T23-29-22ZUTC.png"
+            ]
+        ],
+        "variables": {
+            "business_key": "bfb39b81-e65b-482a-8287-00f8174b388c",
+            "date_start": "2025-11-23",
+            "deliverable_id": "bfb39b81-e65b-482a-8287-00f8174b388c",
+            "order_id": "a3c0428b-b05e-4480-af6f-ddfbd33888bc"
+        },
+        "output_bucket": "hsc-dev-1-workspace",
+        "output_key": "Deliverables/Harvester/bfb39b81-e65b-482a-8287-00f8174b388c.zip"
+    },
+    "success": true
+}

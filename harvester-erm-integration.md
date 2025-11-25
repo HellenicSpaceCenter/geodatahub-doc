@@ -1,5 +1,3 @@
-
-
 ### Authenticate against the ERM
 
 The harvester needs to first authenticate against Keycloak (using client credentials) to obtain a JWT token. This token is passed in the `Authorization` header of all requests to the ERM. The following code evaluates the token and assesses whether the request should be allowed or not.
@@ -25,7 +23,7 @@ The crucial part is the `azp` claim, which is set to, e.g. `harvester-server` in
 
 ### Register harvester events
 
-Events emitted from the harvester are passed to the ERM via a webhook, specifying the _entity_id_ (order ID for which data is being harvested, a _uuid4_) and the _event_type_ (e.g. `harvested`, `harvesting_failed`, etc.). The ERM will then query the harvester for the order ID and update the order status and other relevant fields (e.g. deliverable paths) accordingly.
+Events emitted from the harvester are passed to the ERM via a webhook, specifying the _entity_id_ (the resource ID the event refers to, a _uuid4_) and the _event_type_ (e.g. `EVENT_HARVESTER_SUCCESS`, `EVENT_S3_OBJECTS_COMPRESS_SUCCESS`, etc.). The ERM will resolve the type of the entity from the event type. The ERM will then query the harvester for the resource ID and update the entity status and other relevant fields (e.g. deliverable paths) accordingly.
 
 The webhook can be accessed at `/api/external/harvester/register-event/` and requires a `POST` request with the following JSON body:
 
@@ -40,10 +38,12 @@ Returns a 201 Event Received response if the event was successfully registered.
 
 The following event types are emitted by the Harvester:
 
-| Event Type                  | Description                                    |
-|:----------------------------|:-----------------------------------------------|
-| EVENT_HARVESTER_SUCCESS     | Harvester operation has completed successfully |
-| EVENT_HARVESTER_FAILURE     | Harvester operation has failed                 |
+| Event Type                        | Description                                               | Entity Type    |
+|:----------------------------------|:----------------------------------------------------------|:---------------|
+| EVENT_HARVESTER_SUCCESS           | Harvester operation has completed successfully            | Order          |
+| EVENT_HARVESTER_FAILURE           | Harvester operation has failed                            | Order          |
+| EVENT_S3_OBJECTS_COMPRESS_SUCCESS | S3 objects compression request has completed successfully | Deliverable    |
+| EVENT_S3_OBJECTS_COMPRESS_FAILURE | S3 objects compression request has failed                 | Deliverable    |
 
 ### Submit an order to the harvester
 
@@ -87,10 +87,36 @@ The provider can be one of the following values:
 | PLANET_SCOPE     | PlanetScope        | PlanetScope        |
 | SKY_SAT          | SkySat             | SkySat             |
 
-### Query harvester for order data
+### Submit a request to compress deliverable files to the Harvester
 
-The ERM must be able to query the harvester, to retrieve the processing status of an order, as well as STAC item URLS/IDs upon completion. Additional metadata may also be included on the completion request, or read from the STAC (up for discussion).
+The ERM will submit a request to the harvester via API, specifying the _order_id_ (order ID of the deliverable, a _uuid4_), _deliverable_id_ (the deliverable unique ID, a _uuid4_) and the S3 paths for the objects to process. The harvester will then process the request.
 
-The results of a Harvester operation can be retrieved at `{{flowable-url}}/extensions/erm/orders/{{flowable-business-key}}` using the `GET` HTTP method.
+A request can be submitted at `{{flowable-url}}/extensions/erm/orders/{{order-id}}/deliverables/{{deliverable-id}}` using the `POST` HTTP method with a request body as shown next. The operation will preserve the file system hierarchy in the ZIP archive.
 
-A sample of the response can be found [here](./services/harvester/samples/harvester-sample-response-plantescope.json)
+```json
+{
+    "files": [
+        "Satellite-Data/OroraTech/20240716_0212/F002_L1__IR__L2L1M0__2024-07-15T231153.038502Z_2024-07-17T215808.919232Z_3a655040_1721253590.557983_DG-Img2Map-IR1_0.4.0_afd06dabb0ab58d5_LWIR1.tif",
+        "Satellite-Data/OroraTech/20240716_0212/F002_L1__IR__L2L1M0__2024-07-15T231153.038502Z_2024-07-17T215808.919232Z_3a655040_1721253590.557983_DG-Img2Map-IR1_0.4.0_afd06dabb0ab58d5_LWIR2.tif",
+        "Satellite-Data/OroraTech/Forest-2_GR_18_20-07-2024/2024-07-19T23-29-22ZUTC.png"
+    ]
+}
+```
+
+The new process instance business key is set to the value of the `deliverable-id`.
+
+### Query harvester for process instance results
+
+The ERM must be able to query the harvester, to retrieve the processing status of a request, as well as STAC item URLS/IDs upon completion. Additional metadata may also be included on the completion request, or read from the STAC (up for discussion).
+
+The results of a Harvester operation can be retrieved at `{{flowable-url}}/extensions/erm/process-instances/{{business-key}}/results` using the `GET` HTTP method.
+
+The result depends on the type of the process instance.
+
+- A sample for a EO data processing request can be found [here](./services/harvester/samples/harvester-sample-response-plantescope.json).
+- A sample for a deliverable ZIP archive can be found [here](./services/harvester//samples/harvester-sample-response-s3-objects-compression.json).
+
+| Process                          | Business Key              |
+|:---------------------------------|:--------------------------|
+| EO Data Processing               | The order unique ID       |
+| S3 Objects Compressions          | The deliverable unique ID |
