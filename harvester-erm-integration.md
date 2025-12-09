@@ -25,7 +25,7 @@ The crucial part is the `azp` claim, which is set to, e.g. `harvester-server` in
 
 Events emitted from the harvester are passed to the ERM via a webhook, specifying the _entity_id_ (the resource ID the event refers to, a _uuid4_) and the _event_type_ (e.g. `EVENT_HARVESTER_SUCCESS`, `EVENT_S3_OBJECTS_COMPRESS_SUCCESS`, etc.). The ERM will resolve the type of the entity from the event type. The ERM will then query the harvester for the resource ID and update the entity status and other relevant fields (e.g. deliverable paths) accordingly.
 
-The webhook can be accessed at `/api/external/harvester/register-event/` and requires a `POST` request with the following JSON body:
+The webhook can be accessed at `/api/external/bpm-engine/register-event/` and requires a `POST` request with the following JSON body:
 
 ```json
 {
