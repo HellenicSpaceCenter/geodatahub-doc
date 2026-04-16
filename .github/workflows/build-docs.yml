@@ -105,6 +105,7 @@ jobs:
         needs: build-docs
         runs-on: ubuntu-latest
         permissions:
+            actions: read
             pages: write
             id-token: write
         environment:
