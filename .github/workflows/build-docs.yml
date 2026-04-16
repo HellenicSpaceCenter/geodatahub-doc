@@ -94,8 +94,8 @@ jobs:
                   file: docker/dockerfile
                   push: true
                   tags: |
-                      ghcr.io/${{ steps.lowercase.outputs.repo_owner }}/erm-internal-docs:latest
-                      ghcr.io/${{ steps.lowercase.outputs.repo_owner }}/erm-internal-docs:${{ github.sha }}
+                      ghcr.io/${{ steps.lowercase.outputs.repo_owner }}/geodatahub-doc:latest
+                      ghcr.io/${{ steps.lowercase.outputs.repo_owner }}/geodatahub-doc:${{ github.sha }}
                   labels: |
                       org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
                       org.opencontainers.image.revision=${{ github.sha }}
