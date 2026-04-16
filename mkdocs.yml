@@ -1,0 +1,106 @@
+site_name: HSC GeoDataHub Documentation
+site_description: Documentation site for HSC's Geodatahub. 
+site_author: Hellenic Space Center
+site_url: https://docs.geodatahub.hsc.gr
+
+repo_url: https://github.com/HellenicSpaceCenter/geodatahub-doc
+repo_name: geodatahub-doc
+edit_uri: edit/main/
+
+extra_css:
+        - assets/custom.css
+theme:
+        name: material
+        logo: assets/logo.png
+        favicon: assets/favicon.ico
+        icon:
+                repo: fontawesome/brands/github
+        palette:
+                # Light mode
+                - media: "(prefers-color-scheme: light)"
+                  scheme: default
+                  toggle:
+                          icon: material/brightness-7
+                          name: Switch to dark mode
+                # Dark mode
+                - media: "(prefers-color-scheme: dark)"
+                  scheme: slate
+                  toggle:
+                          icon: material/brightness-4
+                          name: Switch to light mode
+        features:
+                - navigation.tabs
+                - navigation.sections
+                - navigation.expand
+                - navigation.top
+                - navigation.tracking
+                - search.suggest
+                - search.highlight
+                - content.code.copy
+                - content.code.annotate
+                - content.action.view
+                - content.action.edit
+                - toc.follow
+
+plugins:
+        - search
+        - tags
+        - macros
+        - git-revision-date-localized:
+                  enable_creation_date: true
+        - git-committers:
+                  repository: HellenicSpaceCenter/geodatahub-erm
+                  branch: main
+                  token: ${GITHUB_TOKEN} # Use an environment variable for the token
+
+markdown_extensions:
+        - admonition
+        - pymdownx.details
+        - pymdownx.blocks.caption
+        - pymdownx.superfences:
+                  custom_fences:
+                          - name: mermaid
+                            class: mermaid
+                            format: !!python/name:pymdownx.superfences.fence_code_format
+        - pymdownx.tabbed:
+                  alternate_style: true
+        - pymdownx.highlight:
+                  anchor_linenums: true
+        - pymdownx.inlinehilite
+        - pymdownx.snippets
+        - attr_list
+        - md_in_html
+        - tables
+        - toc:
+                  permalink: true
+
+nav:
+        - Home: index.md
+        # - Getting Started:
+        #           - Overview: getting-started/overview.md
+        #           - Quick Start: getting-started/quickstart.md
+        #           - Installation & Setup: getting-started/installation.md
+        - Administration Guide:
+                  - Overview: admin-guide/overview.md
+                  - Workflow Engine: 
+                        - Workflows: admin-guide/workflow-engine/workflows.md
+                        - Nodes: admin-guide/workflow-engine/nodes.md
+                        - Forms: admin-guide/workflow-engine/forms.md
+        # - User Guide:
+        #           - Overview: user-guide/overview.md
+        #           - Dashboard: user-guide/dashboard.md
+        #           - Creating Orders: user-guide/creating-orders.md
+        #           - Order Management: user-guide/order-management.md
+        #           - Workflows: user-guide/workflows.md
+        #           - Chat & Collaboration: user-guide/chat.md
+        #           - File Management: user-guide/file-management.md
+        #           - Deliverables: user-guide/deliverables.md
+        #           - Reports & Analytics: user-guide/analytics.md
+        #           - FAQ: user-guide/faq.md
+        
+        - DevOps Guide:
+                  - Overview: devops/overview.md
+                #   - Deployment: devops/deployment.md
+                #   - CI/CD: devops/ci-cd.md
+                #   - Monitoring & Logging: devops/monitoring.md
+                #   - Scaling & Performance: devops/scaling.md
