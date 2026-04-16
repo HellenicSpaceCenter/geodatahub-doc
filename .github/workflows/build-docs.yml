@@ -100,3 +100,16 @@ jobs:
                       org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
                       org.opencontainers.image.revision=${{ github.sha }}
                       org.opencontainers.image.created=${{ github.event.head_commit.timestamp }}
+
+    publish-to-gh-pages:
+        needs: build-docs
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Download docs artifact
+              uses: actions/download-artifact@v4
+              with:
+                  name: docs-site
