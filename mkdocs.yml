@@ -74,16 +74,12 @@ markdown_extensions:
                   permalink: true
 nav:
         - Αρχική: index.md
-        # - Getting Started:
-        #           - Overview: getting-started/overview.md
-        #           - Quick Start: getting-started/quickstart.md
-        #           - Installation & Setup: getting-started/installation.md
         - Οδηγός Διαχειριστή:
                   - Επισκόπηση: admin-guide/overview.md
-                  - Μηχανή Ροής Εργασίας:
-                            - Ροές Εργασίας: admin-guide/workflow-engine/workflows.md
-                            - Κόμβοι: admin-guide/workflow-engine/nodes.md
-                            - Φόρμες: admin-guide/workflow-engine/forms.md
+                #   - Μηχανή Ροής Εργασίας:
+                #             - Ροές Εργασίας: admin-guide/workflow-engine/workflows.md
+                #             - Κόμβοι: admin-guide/workflow-engine/nodes.md
+                #             - Φόρμες: admin-guide/workflow-engine/forms.md
         # - Οδηγός Χρήστη:
         #           - Επισκόπηση: user-guide/overview.md
         #           - Πίνακας Ελέγχου: user-guide/dashboard.md
