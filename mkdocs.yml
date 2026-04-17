@@ -5,7 +5,7 @@ site_url: https://docs.geodatahub.hsc.gr
 
 repo_url: https://github.com/HellenicSpaceCenter/geodatahub-doc
 repo_name: geodatahub-doc
-edit_uri: edit/main/
+edit_uri: edit/main/docs
 
 extra_css:
         - assets/custom.css
