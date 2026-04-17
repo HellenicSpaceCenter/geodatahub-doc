@@ -1,12 +1,11 @@
-site_name: HSC GeoDataHub Documentation
-site_description: Documentation site for HSC's Geodatahub. 
-site_author: Hellenic Space Center
+site_name: Τεκμηρίωση Γεωπληροφοριακού Συστήματος GeoDataHub
+site_description: Τεκμηρίωση & οδηγός χρήσης για το GeoDataHub, το
+        γεωπληροφοριακό σύστημα του Ελληνικού Κέντρου Διαστήματος.
+site_author: Hellenic Space Center & Geospatial Enabling Technologies
 site_url: https://docs.geodatahub.hsc.gr
-
 repo_url: https://github.com/HellenicSpaceCenter/geodatahub-doc
 repo_name: geodatahub-doc
 edit_uri: edit/main/docs
-
 extra_css:
         - assets/custom.css
 theme:
@@ -61,7 +60,7 @@ markdown_extensions:
                   custom_fences:
                           - name: mermaid
                             class: mermaid
-                            format: !!python/name:pymdownx.superfences.fence_code_format
+                            format: !!python/name:pymdownx.superfences.fence_code_format ""
         - pymdownx.tabbed:
                   alternate_style: true
         - pymdownx.highlight:
@@ -73,34 +72,33 @@ markdown_extensions:
         - tables
         - toc:
                   permalink: true
-
 nav:
-        - Home: index.md
+        - Αρχική: index.md
         # - Getting Started:
         #           - Overview: getting-started/overview.md
         #           - Quick Start: getting-started/quickstart.md
         #           - Installation & Setup: getting-started/installation.md
-        - Administration Guide:
-                  - Overview: admin-guide/overview.md
-                  - Workflow Engine: 
-                        - Workflows: admin-guide/workflow-engine/workflows.md
-                        - Nodes: admin-guide/workflow-engine/nodes.md
-                        - Forms: admin-guide/workflow-engine/forms.md
-        # - User Guide:
-        #           - Overview: user-guide/overview.md
-        #           - Dashboard: user-guide/dashboard.md
-        #           - Creating Orders: user-guide/creating-orders.md
-        #           - Order Management: user-guide/order-management.md
-        #           - Workflows: user-guide/workflows.md
-        #           - Chat & Collaboration: user-guide/chat.md
-        #           - File Management: user-guide/file-management.md
-        #           - Deliverables: user-guide/deliverables.md
-        #           - Reports & Analytics: user-guide/analytics.md
-        #           - FAQ: user-guide/faq.md
-        
-        - DevOps Guide:
-                  - Overview: devops/overview.md
-                #   - Deployment: devops/deployment.md
-                #   - CI/CD: devops/ci-cd.md
-                #   - Monitoring & Logging: devops/monitoring.md
-                #   - Scaling & Performance: devops/scaling.md
+        - Οδηγός Διαχειριστή:
+                  - Επισκόπηση: admin-guide/overview.md
+                  - Μηχανή Ροής Εργασίας:
+                            - Ροές Εργασίας: admin-guide/workflow-engine/workflows.md
+                            - Κόμβοι: admin-guide/workflow-engine/nodes.md
+                            - Φόρμες: admin-guide/workflow-engine/forms.md
+        # - Οδηγός Χρήστη:
+        #           - Επισκόπηση: user-guide/overview.md
+        #           - Πίνακας Ελέγχου: user-guide/dashboard.md
+        #           - Δημιουργία Παραγγελιών: user-guide/creating-orders.md
+        #           - Διαχείριση Παραγγελιών: user-guide/order-management.md
+        #           - Ροές Εργασίας: user-guide/workflows.md
+        #           - Συνεργασία μέσω Συνομιλίας: user-guide/chat.md
+        #           - Διαχείριση Αρχείων: user-guide/file-management.md
+        #           - Παραδοτέα: user-guide/deliverables.md
+        #           - Αναφορές & Αναλύσεις: user-guide/analytics.md
+        #           - Συχνές Ερωτήσεις: user-guide/faq.md
+
+        - DevOps:
+                  - Επισκόπηση: devops/overview.md
+                  #   - Ανάπτυξη: devops/deployment.md
+                  #   - CI/CD: devops/ci-cd.md
+                  #   - Παρακολούθηση & Καταγραφή: devops/monitoring.md
+                  #   - Κλιμάκωση & Απόδοση: devops/scaling.md
