@@ -34,6 +34,7 @@ jobs:
               uses: actions/checkout@v4
               with:
                   fetch-depth: 0 # Full history for git-based mkdocs plugins
+                  lfs: true # All images are stored in Git LFS
 
             - name: Set up Python
               uses: actions/setup-python@v4
