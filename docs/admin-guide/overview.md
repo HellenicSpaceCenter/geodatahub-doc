@@ -1,14 +1,16 @@
 # Administration Guide
 
-This section of the documentation is intended for administrators of the ERM. It provides detailed information on how to manage and configure the system, with a focus on the Workflow Engine, which is a core component of the ERM.
+This section of the documentation is intended for administrators of the platform. It provides detailed information on how to manage and configure the system.
 
 --- 
 
+
+
 ## Workflow Engine
 
-The Workflow Engine is the central Bussiness Process Modeling component of the ERM. It allows the dynamic definition of arbitrarily complex workflows that can include user interactions, automated tasks, conditional logic, and integration with external systems. It is specifically designed for the needs of the ERM.
+The Workflow Engine is the central Business Process Modeling component of the platform. It allows the dynamic definition of arbitrarily complex workflows that can include user interactions, automated tasks, conditional logic, and integration with external systems. It is specifically designed for the needs of the platform.
 
-[*Workflows*](./workflow-engine/workflows.md) are **semantically** and physically tied to the **Application** (order) object, and specifically model the lifecycle of an order. The ERM needs an active workflow for each defined order type:
+[*Workflows*](./workflow-engine/workflows.md) are **semantically** and physically tied to the **Application** (order) object, and specifically model the lifecycle of an order. The platform needs an active workflow for each defined order type:
 
 - New data order
 - Archive data order
@@ -31,3 +33,10 @@ The Workflow Engine is a complex component with many features and capabilities. 
 - **Workflows**: A workflow is a directed graph of nodes that defines the process for a specific order type. Each workflow has a unique name and is associated with an order type.
 - **Nodes**: Nodes are the building blocks of workflows. Each node represents a step in the process and can be of various types (form, action, decision, etc.). Nodes have properties that define their behavior and connections to other nodes. Node permissions can be set to control which users can interact with them (view/edit). Some node types are user-facing (e.g. Forms, Decision), while others are backend-only (e.g. Notification, State Transition).
 - **Forms**: Forms are used to collect input from users. They are rendered in *form nodes* in a workflow, and they define the fields and layout of the user interface for that step in the process. They are built with **FormFields**, which control the data type, validation, presentation, ability to export, and permissions of each field in the form. The data of a FormField for a specific order (application instance) are saved in an **ApplicationData** object.
+
+
+## User Management
+
+The administration page of the platform provides pages for managing [users]({{env.ERM_PRODUCTION_URL}}/admin/edit/users), including creating new users, assigning roles and permissions, and creating [organizations]({{env.ERM_PRODUCTION_URL}}/organizations). The authentication system (Identity & Access Management) is built on top of Keycloak, which provides robust features for user management and authentication. Administrators can also manage users and their permissions through the [Keycloak admin console]({{ env.KEYCLOAK_URL }}/admin/master/console). 
+
+For more information on user management, please refer to the [User Management](./users/index.md) section of the documentation.
