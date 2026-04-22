@@ -82,6 +82,7 @@ nav:
         - Administrator Guide:
                   - Overview: admin-guide/overview.md
                   - Platform Settings: admin-guide/platform-settings.md
+                  - Data Providers: admin-guide/data-providers.md
                   - Workflow Engine:
                             - Workflows: admin-guide/workflow-engine/workflows.md
                             - Nodes: admin-guide/workflow-engine/nodes.md
