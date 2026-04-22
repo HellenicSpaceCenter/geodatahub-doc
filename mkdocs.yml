@@ -90,7 +90,7 @@ nav:
                             - User Management: admin-guide/users/user-management.md
                   - Organizations & Workspaces:
                                 - Overview: admin-guide/orgs/index.md
-                                - Organization Management: admin-guide/orgs/organization-management.md
+                                - Organization Management (Admin): admin-guide/orgs/management.md
         - User Guide:
                   - Overview: user-guide/overview.md
         #           - Dashboard: user-guide/dashboard.md
