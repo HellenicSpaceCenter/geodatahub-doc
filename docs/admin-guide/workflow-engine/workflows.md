@@ -37,10 +37,12 @@ Each workflow must also have at least one _End_ node, which serves as a terminat
 
 ## Activating Workflows
 
-The ERM allows _one active_ workflow _per order type_. You can set the active workflows in the `Διαχείριση > Ρυθμίσεις` page ([link]({{ env.ERM_PRODUCTION_URL }}/admin/app-configuration))
+The ERM allows _one active_ workflow _per order type_. You can set the active workflows in the [`Διαχείριση/Ρυθμίσεις`]({{ env.ERM_PRODUCTION_URL }}/admin/app-configuration) page.
+
 
 !!! danger "Attention"
-After a workflow has been used to create orders, it **should not be edited** anymore. If you need to make changes to an active workflow, it is recommended to create a new workflow and set it as active, while keeping the old workflow for the already created orders.
+   After a workflow has been used to create orders, it **should not be edited** anymore. If you need to make changes to an active workflow, it is recommended to create a new workflow and set it as active, while keeping the old workflow for the already created orders.
+
 
 === "New/Archive Data"
 New or Archive data order settings are editable in the `Ροές` tab.

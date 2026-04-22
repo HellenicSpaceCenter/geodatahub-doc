@@ -85,15 +85,18 @@ nav:
                   - Data Providers: admin-guide/data-providers.md
                   - Email Templates: admin-guide/email-templates.md
                   - Stored Credentials: admin-guide/stored-credentials.md
-                  - Workflow Engine:
-                            - Workflows: admin-guide/workflow-engine/workflows.md
-                            - Nodes: admin-guide/workflow-engine/nodes.md
-                    #             - Forms: admin-guide/workflow-engine/forms.md
+
                   - Users:
                             - Overview: admin-guide/users/index.md
                             - User Management: admin-guide/users/management.md
                   - Organizations & Workspaces:
                                 - Overview: admin-guide/orgs/index.md
+                  - Workflow Engine:
+                            - Introduction: admin-guide/workflow-engine/index.md
+                            - Workflows: admin-guide/workflow-engine/workflows.md
+                            - Nodes: admin-guide/workflow-engine/nodes.md
+                    #             - Forms: admin-guide/workflow-engine/forms.md
+
         - User Guide:
                   - Overview: user-guide/overview.md
         #           - Dashboard: user-guide/dashboard.md
