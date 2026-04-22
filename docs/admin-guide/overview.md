@@ -35,8 +35,3 @@ The Workflow Engine is a complex component with many features and capabilities. 
 - **Forms**: Forms are used to collect input from users. They are rendered in *form nodes* in a workflow, and they define the fields and layout of the user interface for that step in the process. They are built with **FormFields**, which control the data type, validation, presentation, ability to export, and permissions of each field in the form. The data of a FormField for a specific order (application instance) are saved in an **ApplicationData** object.
 
 
-## User Management
-
-The administration page of the platform provides pages for managing [users]({{env.ERM_PRODUCTION_URL}}/admin/edit/users), including creating new users, assigning roles and permissions, and creating [organizations]({{env.ERM_PRODUCTION_URL}}/organizations). The authentication system (Identity & Access Management) is built on top of Keycloak, which provides robust features for user management and authentication. Administrators can also manage users and their permissions through the [Keycloak admin console]({{ env.KEYCLOAK_URL }}/admin/master/console). 
-
-For more information on user management, please refer to the [User Management](./users/index.md) section of the documentation.
