@@ -84,6 +84,7 @@ nav:
                   - Platform Settings: admin-guide/platform-settings.md
                   - Data Providers: admin-guide/data-providers.md
                   - Email Templates: admin-guide/email-templates.md
+                  - Stored Credentials: admin-guide/stored-credentials.md
                   - Workflow Engine:
                             - Workflows: admin-guide/workflow-engine/workflows.md
                             - Nodes: admin-guide/workflow-engine/nodes.md
