@@ -55,6 +55,16 @@ Base fields in the form:
 
 After selecting a type, type-specific fields appear.
 
+### Supported Credential Types
+
+There are **3 supported credential types**, each with its own settings:
+
+| Credential Type | Settings |
+|-----------------|----------|
+| **OAuth2 Client Credentials** | **Client ID**, **Client Secret**, **Token Endpoint URL**, **Scopes** |
+| **Basic Auth** | **Username**, **Password** |
+| **API Key** | **API Key** |
+
 ### API Key Fields
 
 When `Τύπος = API Key`, the form includes:
