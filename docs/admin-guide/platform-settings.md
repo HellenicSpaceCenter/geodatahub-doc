@@ -89,6 +89,10 @@ This tab allows administrators to configure settings regarding the integration o
 - **Active workflow (Ροή Παραγγελιών)**: The workflow that will be triggered when receiving an order from the Governmental Hub via API, or when a user originating from the Governmental Hub submits an order through the HSC Geodatahub interface.
 - **Order data form**: This is the form that will be used to collect the necessary information for processing orders originating from the Governmental Hub. The admin can select from a list of the forms that are used in the **active workflow**. This form should have specific fields that conform to the [agreed-upon interface payload]({{env.ERM_PRODUCTION_URL}}/api/redoc/#operation/createHubOrder) between the HSC Geodatahub and the Governmental Hub, in order for the integration to work properly.
 
+
+## Orders Table Configuration
+
+
 ----
 
 ## Developer Note
