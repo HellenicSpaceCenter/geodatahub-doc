@@ -92,8 +92,101 @@ This tab allows administrators to configure settings regarding the integration o
 
 ## Orders Table Configuration
 
+This tab allows administrators to configure which form fields are displayed and available for filtering in the **Orders Management** table that HSC staff uses to view, search, and manage orders.
 
-----
+![Orders Table Configuration page](./img/app-settings/orders-table/page.png)
+///caption
+Orders Table Configuration overview
+///
+
+The configuration determines:
+
+- Which **dynamically-defined form fields** appear as columns in the orders table
+- Which fields are available as **filters** in the orders management interface
+- The **display order** of both static and dynamic columns
+
+---
+
+### Field Selection and Filtering
+
+At the top of the page, use the **Field Search** to locate specific fields by name, label, or form name.
+
+![Choose fields interface](./img/app-settings/orders-table/choose-fields.png)
+///caption
+Field selection interface showing available form fields
+///
+
+The fields table displays:
+
+| Column | Description |
+|--------|-------------|
+| **Πεδίο** (Field) | Field name/label, grouped by source form (`mname`). Shows the form source as a link. |
+| **Στήλη** (Column) | Checkbox to include the field as a column in the orders table. |
+| **Φίλτρο** (Filter) | Checkbox to make the field available for filtering in the orders management view. |
+| **Τύποι** (Type) | Data type of the field (e.g. `number`, `text`, `rejection_code`, `radio`). |
+
+**Toggle Dynamic Columns**: The toggle at the top-left (`Δυναμικές Στήλες Πεδίων`) enables or disables the inclusion of dynamically-defined form fields in the orders table. When disabled, only static/built-in columns are shown.
+
+**Provider Filter**: The toggle for `Φίλτρο Παρόχου` enables filtering of the orders table by data provider.
+
+---
+
+### Column Ordering
+
+Below the field selection table are three draggable sections for reorganizing the display order of columns:
+
+![Column ordering interface](./img/app-settings/orders-table/column-order.png)
+///caption
+Three column sections with drag-and-drop ordering
+///
+
+**1. Σειρά βασικών στηλών (Basic Columns Order)**
+
+These are static, built-in columns always available:
+
+- Κωδικός Αιτήματος (Order ID)
+- Κατηγορία (Category)
+- Οργανισμός (Organization)
+- Κατάσταση (Status)
+- Ημερομηνία Δημιουργίας (Creation Date)
+- Τελευταία Ενέργεια (Last Action)
+
+Drag fields to reorder how they appear in the orders table (from left to right).
+
+**2. Σειρά προαιρετικών στηλών (Optional Columns Order)**
+
+Optional columns that appear based on workflow context:
+
+- Ημερομηνία Υποβολής (Submission Date)
+- Ημερομηνία Ολοκλήρωσης (Completion Date)
+- Αιτόν (Requester)
+- Χειριστής (Handler/Assignee)
+
+Reorder as needed to customize the table layout.
+
+**3. Σειρά επιλεγμένων δυναμικών στηλών (Dynamic Columns Order)**
+
+These are form fields that were marked with the **Στήλη** checkbox in the field selection table above. Examples include:
+
+- Επιλογή μέγιστης νεφοκάλυψης (Cloud Cover Selection)
+- Επιλογή γωνίας λήψης (Off-Nadir Angle Selection)
+- Μέγιστη Αποδεκτή Νεφοκάλυψη (Maximum Acceptable Cloud Cover)
+- Αναγνωριστικό Δεδομένων (Data Identifier)
+- Σχόλια (Comments)
+- Αιτιολόγηση Προϊόντος (Product Justification)
+
+Drag to reorder the display sequence of these dynamic columns in the orders table.
+
+!!! info "Dynamic fields"
+    Fields in the "Σειρά επιλεγμένων δυναμικών στηλών" section are automatically populated based on which fields have the **Στήλη** checkbox enabled in the field selection table. Reordering them here determines their left-to-right sequence in the actual orders table viewed by HSC staff.
+
+---
+
+### Saving Changes
+
+Click the `Αποθήκευση` button at the top-right of the settings page to persist all changes to the orders table configuration. Remember: this save button applies changes from **all** active settings tabs, not just this one.
+
+
 
 ## Developer Note
 
