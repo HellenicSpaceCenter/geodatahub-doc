@@ -21,7 +21,7 @@ In addition to the platform-wide roles, there are also 2 organization-specific r
 | **Org Admin**     | Has full access to all features and functionalities of the organization, including managing users and their roles within the organization, viewing and managing all orders of the organization, and creating user invitations for the organization. |
 | **Org Member**    | Can view and manage their own orders within the organization, but cannot manage other users or view/manage orders that they do not own. |
 
-Thechincally, these roles are implemented as namespaced group memberships in Keycloak. The convention is `org_id/
+Thechincally, these roles are implemented as namespaced group memberships in Keycloak. Each org is represented by a top-level group, containing sub-groups for each role, e.g. `my-org/admins` and `my-org/users`.
 
 ![User's organization orders page](../img/user-org-orders-page.png)
 /// caption
@@ -64,7 +64,7 @@ The admin can search for existing users by their username or email, and add them
 
 New organizations can only be registered by platform administrators, and users cannot create their own organizations. This is to ensure that organizations are properly registered and managed, and to prevent unauthorized access to the platform.
 
-The platform administrators (users with role _administrator_) can manage organizations in the "Οργανισμοί" page, which is accessible from the main menu. This page allows administrators to view all organizations, create new organizations, and manage existing organizations.
+The platform administrators (users with role _administrator_) can manage organizations in the ["Οργανισμοί"]({{env.ERM_PRODUCTION_URL}}/organizations) page, which is accessible from the main menu. This page allows administrators to view all organizations, create new organizations, and manage existing organizations.
 
 ![Organizations Admin Page](../img//orgs-admin-page.png)
 ///caption

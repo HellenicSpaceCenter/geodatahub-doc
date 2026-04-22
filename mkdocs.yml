@@ -87,10 +87,9 @@ nav:
                     #             - Forms: admin-guide/workflow-engine/forms.md
                   - Users:
                             - Overview: admin-guide/users/index.md
-                            - User Management: admin-guide/users/user-management.md
+                            - User Management: admin-guide/users/management.md
                   - Organizations & Workspaces:
                                 - Overview: admin-guide/orgs/index.md
-                                - Organization Management (Admin): admin-guide/orgs/management.md
         - User Guide:
                   - Overview: user-guide/overview.md
         #           - Dashboard: user-guide/dashboard.md
