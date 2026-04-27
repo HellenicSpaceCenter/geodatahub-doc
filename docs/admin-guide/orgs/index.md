@@ -21,7 +21,7 @@ In addition to the platform-wide roles, there are also 2 organization-specific r
 | **Org Admin**     | Has full access to all features and functionalities of the organization, including managing users and their roles within the organization, viewing and managing all orders of the organization, and creating user invitations for the organization. |
 | **Org Member**    | Can view and manage their own orders within the organization, but cannot manage other users or view/manage orders that they do not own. |
 
-Thechincally, these roles are implemented as namespaced group memberships in Keycloak. Each org is represented by a top-level group, containing sub-groups for each role, e.g. `my-org/admins` and `my-org/users`.
+Technically, these roles are implemented as namespaced group memberships in Keycloak. Each org is represented by a top-level group, containing sub-groups for each role, e.g. `my-org/admins` and `my-org/users`.
 
 ![User's organization orders page](../img/user-org-orders-page.png)
 /// caption
@@ -44,7 +44,7 @@ Org **members** can:
 
 ## Organization management
 
-Organization management is performed through the "Οργανισμός" page, which is accessibl to org admins. This page allows org admins to manage their organization, including adding/removing users, managing user roles, and creating user invitations.
+Organization management is performed through the "Οργανισμός" page, which is accessible to org admins. This page allows org admins to manage their organization, including adding/removing users, managing user roles, and creating user invitations.
 ![Organization management page](../img/org-management-page.png)
 
 

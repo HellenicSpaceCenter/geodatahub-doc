@@ -15,16 +15,16 @@ Workflow administration page, listing all workflows in the system
 
     To create a new workflow, click the **+ Νέο Αίτημα** button at the top-left of the workflows page. This opens a dialog for entering basic workflow information.
 
-    ![New workflow dialog](../img/workflows/new-workflow-dialog.png)
-    ///caption
-    New workflow creation dialog
-    ///
-
     In the creation dialog, provide:
 
     - **Τίτλος** (Title): A clear, descriptive name for the workflow (e.g., "Νέα Δεδομένα", "Archive Order Process").
     - **Περιγραφή** (Description): A summary of the workflow's purpose and expected behavior.
     - **Τύπος** (Type): The workflow visibility type. Currently supported: **Public**.
+
+    ![New workflow dialog](../img/workflows/new-workflow-dialog.png)
+    ///caption
+    New workflow creation dialog
+    ///
 
     After clicking **Δημιουργία**, the system creates a blank workflow with a default entry node and opens the editor. You can then:
 
@@ -34,34 +34,33 @@ Workflow administration page, listing all workflows in the system
 
 === "Load from JSON Export"
 
-    Workflows can be exported and imported as JSON files.
+    To load a workflow from a previously exported JSON file:
+
+    1. Open the new workflow dialog by clicking **+ Νέο Αίτημα**, then click on the **Εισαγωγή από JSON** button at the bottom of the dialog.
+    2. Select a workflow export file from your file system.
+    3. The system validates the JSON structure and imports it as a new workflow. All forms are duplicated and linked to the new workflow, so there are no shared forms between the original and imported workflows.
+    4. The imported workflow appears in the workflows list and can be immediately edited.
+
+    You can overwrite the imported workflow's metadata:
+
+    | Field | Description |
+    |-------|-------------|
+    | **Νέα Ετικέτα Ροής** (New Title) | The workflow title (human-readable name) for the imported workflow. |
+    | **Νέο αναγνωριστικό** (New Identifier) | The workflow machine identifier (*mname*) for the imported workflow. |
+   
+    !!! info "Workflow Machine Identifier"
+        If you do not overwrite the machine identifier, and an existing workflow with the same identifier exists, the system will append an auto-incremented suffix to create a unique identifier for the imported workflow. This allows you to import multiple versions of the same workflow without conflicts.
 
     ![Load workflow from JSON](../img/workflows/new-workflow-from-json-export.png)
     ///caption
     Importing a workflow from JSON export file
     ///
 
-    ### Importing a Workflow from JSON
-
-    To load a workflow from a previously exported JSON file:
-
-    1. Open the new workflow dialog by clicking **+ Νέο Αίτημα**, then click on the **Εισαγωγή από JSON** button at the bottom of the dialog.
-    2. Select a workflow export file from your file system.
-    3. The system validates the JSON structure and imports it as a new workflow.
-    4. The imported workflow appears in the workflows list and can be immediately edited.
-
-    You can overwrite:
-
-      - The workflow title (human-readable name) using the "Νέα Ετικέτα Ροής" field
-      - The workflow machine identifier (*mname*) using the "Νέο αναγνωριστικό" field.
-   
-    !!! info "Workflow Machine Identifier"
-      If you do not overwrite the machine identifier, and an existing workflow with the same identifier exists, the system will append an auto-incremented suffix to create a unique identifier for the imported workflow. This allows you to import multiple versions of the same workflow without conflicts.
----
+----
 
 
 
-### Editing Workflow Metadata
+## Editing Workflow Metadata
 
 Selecting a workflow from the list opens the workflow editor page, where you can view and modify the workflow's structure and properties.
 
@@ -80,14 +79,18 @@ The metadata form allows you to configure the following properties:
 
 After modifying any metadata fields, click **Αποθήκευση** to save the changes. To remove the workflow entirely, click **Διαγραφή Ροής** (Delete Workflow).
 
-!!! warning "Delete with caution"
-    Deleting a workflow cannot be undone. Ensure that no active orders are using this workflow before deletion.
+!!! warning "Workflow Deletion"
+    Workflows which have been used in at least one order cannot be deleted. This is enforced at the database level via ON_DELETE constraints to ensure data integrity. 
 
+## Export to JSON
 
+You can  export the workflow as a JSON file by clicking the download icon button. This allows you to create backups of your workflow configurations or transfer them between environments.
+
+![Export button](../img/workflows/export-to-json.png)
 
 ---
 
-### Editing Nodes
+## Editing Nodes
 
 The main interface for editing a workflow is the node editor, which allows administrators to define [nodes](../workflow-engine/nodes.md) and their connections. Each node can be configured with specific properties, dependent on the node type.
 
@@ -116,19 +119,11 @@ Each workflow must also have at least one _End_ node, which serves as a terminat
 
 ## Activating Workflows
 
-The ERM allows _one active_ workflow _per order type_. You can set the active workflows in the [`Διαχείριση/Ρυθμίσεις`]({{ env.ERM_PRODUCTION_URL }}/admin/app-configuration) page.
+The ERM allows _one active_ workflow _per order type_. You can set the active workflows in the [`Διαχείριση/Ρυθμίσεις`]({{ env.ERM_PRODUCTION_URL }}/admin/app-configuration) page. Relevant documentation about active workflow settings can be found in the platform settings documentation for [new/archive data orders](../platform-settings.md#workflows) and [Governmental Hub orders](../platform-settings.md#governmental-hub-integration-axis-3).
 
 
 !!! danger "Attention"
-   After a workflow has been used to create orders, it **should not be edited** anymore. If you need to make changes to an active workflow, it is recommended to create a new workflow and set it as active, while keeping the old workflow for the already created orders.
+    After a workflow has been used to create orders, it **should not be edited** anymore. If you need to make changes to an active workflow, it is recommended to create a new workflow and set it as active, while keeping the old workflow for the already created orders.
 
-
-=== "New/Archive Data"
-New or Archive data order settings are editable in the `Ροές` tab.
-![alt text](../img/wf-settings.png)
-
-=== "Axis-3"
-Axis-3 order settings are editable in the `Axis-3` tab. This tab also requires the selection of a _Form_, which acts as the _order data_ form for machine-to-machine communication. (The form should be used in the selected workflow)
-![alt text](../img/axis-3-settings.png)
 
 ---
