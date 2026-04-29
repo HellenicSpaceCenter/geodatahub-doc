@@ -52,9 +52,11 @@ Node permissions editor. In this example, the node is visible to all user groups
 ### Common node settings
 
 All nodes have some common settings:
+
 | Setting | Label | Required | Description |
 |---|---|---|---|
 | **Title** | Τίτλος | Yes | The title of the node displayed to users |
+
 
 ----
 
@@ -112,7 +114,12 @@ Capture a binary choice and branch workflow accordingly.
 
 | Setting | Label | Required | Description |
 |---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node displayed to users |
+| **Condition** | Συνθήκη | Yes | Define the condition for branching based on the user's choice |
 
+![Boolean node settings](../img/nodes/boolean-settings.png)
+///caption
+Boolean node settings menu.///
 
 ### <i data-lucide="user-plus" class="icon-small"></i> Assignation
 
@@ -129,7 +136,12 @@ Assign the order to a specific operator.
 
 | Setting | Label | Required | Description |
 |---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node displayed to users |
+| **Operator** | Επιλογή Χρήστη | Yes | Select the operator to assign the order to |
 
+![Assignation node settings](../img/nodes/assignation-settings.png)
+///caption
+Assignation node settings menu.///
 
 ### <i data-lucide="bookmarked" class="icon-small"></i> Submit
 
@@ -145,8 +157,12 @@ Final submission checkpoint for users to confirm their data and intent before fo
 #### Settings
 | Setting | Label | Required | Description |
 |---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node displayed to users |
+| **Confirmation Message** | Μήνυμα Επιβεβαίωσης | Yes | Message displayed to the user for final confirmation |
 
-
+![Submit node settings](../img/nodes/submit-settings.png)
+///caption
+Submit node settings menu.///
 
 ### <i data-lucide="cpu" class="icon-small"></i> Harvester Subsystem
 
@@ -155,7 +171,7 @@ Final submission checkpoint for users to confirm their data and intent before fo
 Operational step for launching and monitoring Harvester ingestion tasks. The harvester subsystem is responsible for ingesting completed orders' data bundles into the [Geodatahub catalog service]({{env.CATALOG_URL}}).
 
 !!! warning "Harvester Subsystem"
-    In practice, this node should **always** only be accesible by internal users. 
+    In practice, this node should **always** only be accessible by internal users. 
 
 #### Runtime behavior
 
@@ -167,47 +183,77 @@ Operational step for launching and monitoring Harvester ingestion tasks. The har
 #### Settings
 | Setting | Label | Required | Description |
 |---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node displayed to users |
+| **Provider** | Πάροχος | Yes | Select the data provider for the ingestion task |
+| **Source Folder** | Φάκελος Πηγής | Yes | Specify the source folder for the data ingestion |
 
+![Harvester Subsystem node settings](../img/nodes/harvester-subsystem-settings.png)
+///caption
+Harvester Subsystem node settings menu.///
 
-
-### <i data-lucide="package" class="icon-small"></i> Deliverables
+### <i data-lucide="bell" class="icon-small"></i> Notify
 
 #### Purpose
-
-Create deliverables for the application. Deliverables are the outputs that the Hellenic Space Center team produces and delivers to the applicant as part of the order fulfillment process. Deliverables are `.zip` files containing the data products generated for the applicant. They are either:
-
-- Created by hand and uploaded to the platform storage (S3) or 
-- Generated automatically by backend processes, given a list of files to include in the deliverable bundle.
-
-This node allows linking deliverables to the order, using either of the above methods.
-
-!!! Progress
-    To account for cases of recurrent data deliveries (e.g. twice a day, for 3 days), multiple deliverables can be linked to the order, at different times, instead of just one. The operator must explicitly mark when the final deliverable has been linked, and continue to the next step.
+Send notification(s) to users based on workflow events. This node allows configuring and sending notifications to users when the workflow reaches this point. Notifications can be used to inform users about important events, such as order submission, status changes, or when their input is required to proceed with the workflow.
 
 #### Runtime behavior
-- If manual upload: Operator provides deliverable name and S3 path, and backend creates record linked to order.
-- If automatic generation: Operator provides list of files to include, backend sends a task to the task queue to generate the deliverable bundle, and creates record linked to order once the task is completed.
+
+- When workflow execution reaches this node, a notification is created.
+- Notification content can include dynamic data from the order context, using a templating syntax.
+- Notifications are recorded in the database and can be viewed in the order's notification history.
+- The notification is sent using the relevant channels (e.g. email, in-app).
 
 #### Settings
 | Setting | Label | Required | Description |
 |---|---|---|---|
-| **Title** | Τίτλος | Yes | The title of the node displayed to users |
-| **Permissions** | Δικαιώματα | Yes | Define which user groups can see and interact with the node |
+| **Title** | Τίτλος | Yes | The title of the node |
+| **Notification Content** | Περιεχόμενο Ειδοποίησης | Yes | Define the content of the notification |
+| **Recipients** | Παραλήπτες | Yes | Specify the recipients of the notification |
 
+![Notify node settings](../img/nodes/notify-settings.png)
+///caption
+Notify node settings menu.///
 
-### End Node
+### <i data-lucide="stamp" class="icon-small"></i> Register
 
 #### Purpose
-End-of-flow state and final status display.
+
+Assign `geodatahub_order_id` to application, if not already set. This marks the order as registered in the system, ceasing to be a "draft" and becoming an official order in the system. After this point, the order is visible in the order management interface and can be processed by the Hellenic Space Center team.
+
+#### Runtime behavior
+
+- Backend generates unique `geodatahub_order_id` and assigns it to `application.geodatahub_order_id`.
+
+#### Settings
+| Setting | Label | Required | Description |
+|---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node |
+| **Mode** | Τρόπος | Yes | Select the mode for generating the order ID (Incremental or Random) |
+
+![Register node settings](../img/nodes/register-node-settings.png)
+///caption
+Register node settings menu.///
+
+### <i data-lucide="forward" class="icon-small"></i> Transition
+
+#### Purpose
+Change application status.
 
 ### Runtime behavior
 
-- Used by workflow as final anchor (`workflow.end_node`).
-- Shown as final state screen in UI.
-- Visual status style differs for completed vs non-completed final statuses.
+- Finalizes previous node data.
+- Sets `application.status = node.transition`.
+- If status is one of `completed`, `rejected`, `cancelled`, `failed`, application is closed and all data is finalized.
 
+#### Settings
+| Setting | Label | Required | Description |
+|---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node |
+| **Transition** | Αλλαγή κατάστασης σε: | Yes | The application status to transition to when the workflow reaches this node. |
 
-## Backend nodes
+![Transition node settings](../img/nodes/transition-node-settings.png)
+///caption
+Transition node settings menu.///
 
 ### <i data-lucide="webhook" class="icon-small"></i> Webhook
 
@@ -233,8 +279,7 @@ Trigger an outbound HTTP call to an external API, and show call history in the U
 
 ![Webhook node settings](../img/nodes/webhook-settings.png)
 ///caption
-Webhook node settings menu.
-///
+Webhook node settings menu.///
 
 #### Dynamic Values
 
@@ -247,84 +292,8 @@ A helper dropdown is available in the UI to assist users in constructing these d
 
 When a user selects a field from the dropdown, the corresponding Jinja2 template syntax is copied to the clipboard, which they can then paste into the URL or payload fields to include dynamic data in their webhook calls.
 
-![Webhook dynamic values helper](../img/nodes/webhook-dynamic-values.png)
-
-
-### <i data-lucide="forward" class="icon-small"></i> Transition
-
-#### Purpose
-Change application status.
-
-### Runtime behavior
-
-- Finalizes previous node data.
-- Sets `application.status = node.transition`.
-- If status is one of `completed`, `rejected`, `cancelled`, `failed`, application is closed and all data is finalized.
-
-
-#### Settings
-| Setting | Label | Required | Description |
-|---|---|---|---|
-| **Title** | Τίτλος | Yes | The title of the node |
-| **Transition** | Αλλαγή κατάστασης σε: | Yes | The application status to transition to when the workflow reaches this node. |
-
-///![Transition node settings](../img/nodes/transition-settings.png)
+![Webhook dynamic values helper](../img/nodes/webhook-settings-dynamic-values.png)
 ///caption
-Transition node settings menu.
-///
-
-### <i data-lucide="stamp" class="icon-small"></i> Register
-
-#### Purpose
-
-Assign `geodatahub_order_id` to application, if not already set. This marks the order as registered in the system, ceasing to be a "draft" and becoming an official order in the system. After this point, the order is visible in the order management interface and can be processed by the Hellenic Space Center team.
-
-#### Runtime behavior
-
-- Backend generates unique `geodatahub_order_id` and assigns it to `application.geodatahub_order_id`.
-
-#### Settings
-| Setting | Label | Required | Description |
-|---|---|---|---|
-| **Title** | Τίτλος | Yes | The title of the node |
-
-#### Modes
-
-The register node can operate in two modes:
-
-- **Incremental**: teh generated id is based on the previous maximum `geodatahub_order_id` in the system, incremented by 1, and padded to the sedired length. This ensures sequential order IDs, but can lead to race conditions if multiple orders are registered at the same time, potentially causing duplicate ID errors.
-- **Random**: the generated id is a UUID-derived token with the desired length.
-
-### <i data-lucide="bell" class="icon-small"></i> Notify
-
-#### Purpose
-Send notification(s) to users based on workflow events. This node allows configuring and sending notifications to users when the workflow reaches this point. Notifications can be used to inform users about important events, such as order submission, status changes, or when their input is required to proceed with the workflow.
-
-#### Runtime behavior
-
-- When workflow execution reaches this node, a notification is created.
-- Notification content can include dynamic data from the order context, using a templating syntax.
-- Notifications are recorded in the database and can be viewed in the order's notification history.
-- The notification is sent using the relevant channels (e.g. email, in-app).
-
-#### Settings
-| Setting | Label | Required | Description |
-|---|---|---|---|
-| **Title** | Τίτλος | Yes | The title of the node |
-
-
-
-
-### <i data-lucide="ban" class="icon-small"></i> Restrict Cancellation 
-#### Purpose
-Disable cancellation for the order. This node is used to prevent users from cancelling their order once it has reached a certain point in the workflow. This is important for ensuring that orders that are already being processed by the Hellenic Space Center team cannot be cancelled by the applicant, which could lead to confusion and wasted resources.
-
-#### Runtime behavior
-- Backend sets `application.is_cancellable = False`.
-
-#### Settings
-| Setting | Label | Required | Description |
-|---|---|---|---|
-| **Title** | Τίτλος | Yes | The title of the node |
+Webhook dynamic values helper dropdown.///
 
 
