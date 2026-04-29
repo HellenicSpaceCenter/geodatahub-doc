@@ -56,7 +56,10 @@ plugins:
                   repository: HellenicSpaceCenter/geodatahub-erm
                   branch: main
                   token: ${GITHUB_TOKEN} # Use an environment variable for the token
-
+extra_javascript:
+  - https://unpkg.com/lucide@latest
+  - assets/lucide-init.js
+  
 markdown_extensions:
         - admonition
         - pymdownx.details

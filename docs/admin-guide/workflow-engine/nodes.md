@@ -62,7 +62,7 @@ All nodes have some common settings:
 
 Full list of user-facing nodes:
 
-### Form
+### <i data-lucide="file-text" class="icon-small"></i> Form
 
 Form nodes present a form to the user, allowing them to input data that will be used in subsequent steps of the workflow. Forms can include various field types such as text inputs, dropdowns, checkboxes, and file uploads.
 
@@ -74,7 +74,7 @@ Form node in a workflow graph
 ///
 
 #### Purpose
-Collect form field data (`ApplicationData`) from users.
+Collect form field data from users.
 
 #### Runtime behavior
 
@@ -96,7 +96,7 @@ Form node settings menu.
 ///
 
 
-### Boolean
+### <i data-lucide="split" class="icon-small"></i> Boolean
 
 #### Purpose
 
@@ -114,7 +114,7 @@ Capture a binary choice and branch workflow accordingly.
 |---|---|---|---|
 
 
-### Assignation
+### <i data-lucide="user-plus" class="icon-small"></i> Assignation
 
 #### Purpose
 Assign the order to a specific operator.
@@ -131,7 +131,7 @@ Assign the order to a specific operator.
 |---|---|---|---|
 
 
-### Submit
+### <i data-lucide="bookmarked" class="icon-small"></i> Submit
 
 #### Purpose
 Final submission checkpoint for users to confirm their data and intent before forwarding the order to the Hellenic Space Center team.
@@ -148,7 +148,7 @@ Final submission checkpoint for users to confirm their data and intent before fo
 
 
 
-### Harvester Subsystem
+### <i data-lucide="cpu" class="icon-small"></i> Harvester Subsystem
 
 #### Purpose
 
@@ -170,7 +170,7 @@ Operational step for launching and monitoring Harvester ingestion tasks. The har
 
 
 
-### Deliverables
+### <i data-lucide="package" class="icon-small"></i> Deliverables
 
 #### Purpose
 
@@ -195,9 +195,21 @@ This node allows linking deliverables to the order, using either of the above me
 | **Permissions** | Δικαιώματα | Yes | Define which user groups can see and interact with the node |
 
 
+### End Node
+
+#### Purpose
+End-of-flow state and final status display.
+
+### Runtime behavior
+
+- Used by workflow as final anchor (`workflow.end_node`).
+- Shown as final state screen in UI.
+- Visual status style differs for completed vs non-completed final statuses.
+
+
 ## Backend nodes
 
-### Webhook
+### <i data-lucide="webhook" class="icon-small"></i> Webhook
 
 !!! UI
     Webhooks are hybrid in the sense that they are backend nodes that can also be rendered in the UI, to show internal users the status of the webhook call and allow retriggering it if necessary.
@@ -236,3 +248,83 @@ A helper dropdown is available in the UI to assist users in constructing these d
 When a user selects a field from the dropdown, the corresponding Jinja2 template syntax is copied to the clipboard, which they can then paste into the URL or payload fields to include dynamic data in their webhook calls.
 
 ![Webhook dynamic values helper](../img/nodes/webhook-dynamic-values.png)
+
+
+### <i data-lucide="forward" class="icon-small"></i> Transition
+
+#### Purpose
+Change application status.
+
+### Runtime behavior
+
+- Finalizes previous node data.
+- Sets `application.status = node.transition`.
+- If status is one of `completed`, `rejected`, `cancelled`, `failed`, application is closed and all data is finalized.
+
+
+#### Settings
+| Setting | Label | Required | Description |
+|---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node |
+| **Transition** | Αλλαγή κατάστασης σε: | Yes | The application status to transition to when the workflow reaches this node. |
+
+///![Transition node settings](../img/nodes/transition-settings.png)
+///caption
+Transition node settings menu.
+///
+
+### <i data-lucide="stamp" class="icon-small"></i> Register
+
+#### Purpose
+
+Assign `geodatahub_order_id` to application, if not already set. This marks the order as registered in the system, ceasing to be a "draft" and becoming an official order in the system. After this point, the order is visible in the order management interface and can be processed by the Hellenic Space Center team.
+
+#### Runtime behavior
+
+- Backend generates unique `geodatahub_order_id` and assigns it to `application.geodatahub_order_id`.
+
+#### Settings
+| Setting | Label | Required | Description |
+|---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node |
+
+#### Modes
+
+The register node can operate in two modes:
+
+- **Incremental**: teh generated id is based on the previous maximum `geodatahub_order_id` in the system, incremented by 1, and padded to the sedired length. This ensures sequential order IDs, but can lead to race conditions if multiple orders are registered at the same time, potentially causing duplicate ID errors.
+- **Random**: the generated id is a UUID-derived token with the desired length.
+
+### <i data-lucide="bell" class="icon-small"></i> Notify
+
+#### Purpose
+Send notification(s) to users based on workflow events. This node allows configuring and sending notifications to users when the workflow reaches this point. Notifications can be used to inform users about important events, such as order submission, status changes, or when their input is required to proceed with the workflow.
+
+#### Runtime behavior
+
+- When workflow execution reaches this node, a notification is created.
+- Notification content can include dynamic data from the order context, using a templating syntax.
+- Notifications are recorded in the database and can be viewed in the order's notification history.
+- The notification is sent using the relevant channels (e.g. email, in-app).
+
+#### Settings
+| Setting | Label | Required | Description |
+|---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node |
+
+
+
+
+### <i data-lucide="ban" class="icon-small"></i> Restrict Cancellation 
+#### Purpose
+Disable cancellation for the order. This node is used to prevent users from cancelling their order once it has reached a certain point in the workflow. This is important for ensuring that orders that are already being processed by the Hellenic Space Center team cannot be cancelled by the applicant, which could lead to confusion and wasted resources.
+
+#### Runtime behavior
+- Backend sets `application.is_cancellable = False`.
+
+#### Settings
+| Setting | Label | Required | Description |
+|---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node |
+
+
