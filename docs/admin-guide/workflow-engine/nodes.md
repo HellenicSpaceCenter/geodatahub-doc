@@ -299,7 +299,8 @@ Trigger an outbound HTTP call to an external API, and show call history in the U
 
 ![Webhook node settings](../img/nodes/webhook-settings.png)
 ///caption
-Webhook node settings menu.///
+Webhook node settings menu.
+///
 
 #### Dynamic Values
 
@@ -312,25 +313,8 @@ A helper dropdown is available in the UI to assist users in constructing these d
 
 When a user selects a field from the dropdown, the corresponding Jinja2 template syntax is copied to the clipboard, which they can then paste into the URL or payload fields to include dynamic data in their webhook calls.
 
+
 ![Webhook dynamic values helper](../img/nodes/webhook-settings-dynamic-values.png)
 ///caption
-Webhook dynamic values helper dropdown.///
-
-#### Dynamic Values
-
-Notification content supports dynamic values when the **Content (Περιεχόμενο Ειδοποίησης)** setting is set to "Εισαγωγή κειμένου" (Text Input). This allows the notification message to include dynamic data from the order context, using a templating syntax ([Jinja2](https://jinja.palletsprojects.com/en/3.1.x/)).
-
-When constructing the notification content, users can reference application data fields to dynamically populate the message. This is particularly useful for creating personalized notifications or including order-specific details.
-
-A helper dropdown is available in the UI to assist users in constructing these dynamic values. The dropdown lists all available order data fields that can be used in the templates, such as:
-
-- Order ([Application](https://github.com/HellenicSpaceCenter/geodatahub-erm/blob/main/services/core/modules/flows/orders/models.py#L133)) fields 
-- Form inputs collected in previous nodes. 
-
-When a user selects a field from the dropdown, the corresponding Jinja2 template syntax is copied to the clipboard, which they can then paste into the notification content field to include dynamic data in their messages.
-
-![Notification dynamic values helper](../img/nodes/notification-recipients/dynamic-values-helper.png)
-///caption
-Notification dynamic values helper dropdown.///
-
-
+Webhook dynamic values helper dropdown.
+///
