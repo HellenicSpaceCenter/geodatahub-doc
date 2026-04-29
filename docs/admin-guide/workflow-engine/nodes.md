@@ -224,13 +224,20 @@ Notify node settings menu.
 
 Recipient selection supports 4 modes:
 
-1. **Specific users**: Select individual users to receive the notification. ![alt text](../img/nodes/notification-recipients/specific-users.png)
+=== "Specific users"
+    Select individual users to receive the notification.	
+    ![alt text](../img/nodes/notification-recipients/specific-users.png)
 
-2. **Role-based**: Select user groups based on their role in the order (e.g. Author, Supervisor, Operator). ![alt text](../img/nodes/notification-recipients/role-based.png)
+=== "Role-based"
+    Select user groups based on their role in the order (e.g. Author, Supervisor, Operator).	
+    ![alt text](../img/nodes/notification-recipients/role-based.png)
 
-3. **User groups**: Select user groups (e.g. Supervisors, Operators) to receive the notification. ![alt text](../img/nodes/notification-recipients/user-groups.png)
+=== "User groups"
+    Select user groups (e.g. Supervisors, Operators) to receive the notification.	
+    ![alt text](../img/nodes/notification-recipients/user-groups.png)
 
-4. **Relation-based**: Select users based on their relation to the order (author, assigned operator). ![alt text](../img/nodes/notification-recipients/relation-based.png)
+=== "Relation-based"
+    Select users based on their relation to the order (author, assigned operator).	![alt text](../img/nodes/notification-recipients/relation-based.png)
 
 
 #### Dynamic Message Content
