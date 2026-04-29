@@ -80,7 +80,7 @@ markdown_extensions:
 nav:
         - Home: index.md
         - Administrator Guide:
-                  - Overview: admin-guide/overview.md
+                  - Overview: admin-guide/index.md
                   - Platform Settings: admin-guide/platform-settings.md
                   - Data Providers: admin-guide/data-providers.md
                   - Email Templates: admin-guide/email-templates.md
@@ -98,7 +98,7 @@ nav:
                     #             - Forms: admin-guide/workflow-engine/forms.md
 
         - User Guide:
-                  - Overview: user-guide/overview.md
+                  - Overview: user-guide/index.md
         #           - Dashboard: user-guide/dashboard.md
         #           - Creating Orders: user-guide/creating-orders.md
         #           - Order Management: user-guide/order-management.md
