@@ -22,7 +22,7 @@ When a user (or machine, e.g. the Axis-3 orchestrator) creates an order, the rel
 
 The Workflow Engine is a complex component with many features and capabilities. It is built using some foundational models/concepts that are important to understand:
 
-- **Workflows**: A workflow is a directed graph of nodes that defines the process for a specific order type. Each workflow has a unique name and is associated with an order type.
+- **Workflows**: A workflow is a *directed graph* that defines the bussiness logic model for a specific order type. Each workflow has a unique name and is associated with an order type (see [Platform Settings](../platform-settings.md#workflows)). A workflow consists of nodes and connections that define the flow of the process. 
 - **Nodes**: Nodes are the building blocks of workflows. Each node represents a step in the process and can be of various types (form, action, decision, etc.). Nodes have properties that define their behavior and connections to other nodes. Node permissions can be set to control which users can interact with them (view/edit). Some node types are user-facing (e.g. Forms, Decision), while others are backend-only (e.g. Notification, State Transition).
 - **Forms**: Forms are used to collect input from users. They are rendered in *form nodes* in a workflow, and they define the fields and layout of the user interface for that step in the process. They are built with **FormFields**, which control the data type, validation, presentation, ability to export, and permissions of each field in the form. The data of a FormField for a specific order (application instance) are saved in an **ApplicationData** object.
 

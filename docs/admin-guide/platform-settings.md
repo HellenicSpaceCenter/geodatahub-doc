@@ -182,9 +182,9 @@ Drag to reorder the display sequence of these dynamic columns in the orders tabl
 
 ---
 
-### Saving Changes
+## Saving Changes
 
-Click the `Αποθήκευση` button at the top-right of the settings page to persist all changes to the orders table configuration. Remember: this save button applies changes from **all** active settings tabs, not just this one.
+Click the `Αποθήκευση` button at the top-right of the settings page to persist all changes to the orders table configuration. Remember: this save button applies changes from **all** active settings tabs, not just the selected one.
 
 
 

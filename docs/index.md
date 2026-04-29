@@ -1,6 +1,4 @@
-# GeoDataHub Documentation
-
-> Υποσύστημα Διαχείρισης αιτημάτων & Διανομής Γεωχωρικών Δεδομένων
+# Hellenic Space Center - GeoDataHub Documentation
 
 ---
 

@@ -1,6 +1,6 @@
 # Email Templating System
 
-The **Email Templating System** (accessible via `Διαχείριση / Πρότυπα Email`) allows administrators to manage reusable email templates and content blocks used by platform notifications.
+The **Email Templating System** (accessible via `Διαχείριση / Πρότυπα Email`) allows administrators to manage reusable email templates and content blocks used by platform [notifications](./workflow-engine/nodes.md#notification).
 
 The page is split into two sections:
 
