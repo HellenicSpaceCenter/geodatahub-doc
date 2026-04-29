@@ -115,11 +115,13 @@ Capture a binary choice and branch workflow accordingly.
 | Setting | Label | Required | Description |
 |---|---|---|---|
 | **Title** | Τίτλος | Yes | The title of the node displayed to users |
-| **Condition** | Συνθήκη | Yes | Define the condition for branching based on the user's choice |
+| **True Label** | Ετικέτα "Ναι" | No | Label for the "true" option |
+| **False Label** | Ετικέτα "Όχι" | No | Label for the "false" option |
 
 ![Boolean node settings](../img/nodes/boolean-settings.png)
 ///caption
-Boolean node settings menu.///
+Boolean node settings menu.
+///
 
 ### <i data-lucide="user-plus" class="icon-small"></i> Assignation
 
@@ -141,7 +143,8 @@ Assign the order to a specific operator.
 
 ![Assignation node settings](../img/nodes/assignation-settings.png)
 ///caption
-Assignation node settings menu.///
+Assignation node settings menu.
+///
 
 ### <i data-lucide="bookmarked" class="icon-small"></i> Submit
 
@@ -162,7 +165,8 @@ Final submission checkpoint for users to confirm their data and intent before fo
 
 ![Submit node settings](../img/nodes/submit-settings.png)
 ///caption
-Submit node settings menu.///
+Submit node settings menu.
+///
 
 ### <i data-lucide="cpu" class="icon-small"></i> Harvester Subsystem
 
@@ -184,12 +188,12 @@ Operational step for launching and monitoring Harvester ingestion tasks. The har
 | Setting | Label | Required | Description |
 |---|---|---|---|
 | **Title** | Τίτλος | Yes | The title of the node displayed to users |
-| **Provider** | Πάροχος | Yes | Select the data provider for the ingestion task |
-| **Source Folder** | Φάκελος Πηγής | Yes | Specify the source folder for the data ingestion |
+| **Message** | Μήνυμα | No | Optional message to display to users when workflow reaches this node |
 
 ![Harvester Subsystem node settings](../img/nodes/harvester-subsystem-settings.png)
 ///caption
-Harvester Subsystem node settings menu.///
+Harvester Subsystem node settings menu.
+///
 
 ### <i data-lucide="bell" class="icon-small"></i> Notify
 
@@ -207,12 +211,26 @@ Send notification(s) to users based on workflow events. This node allows configu
 | Setting | Label | Required | Description |
 |---|---|---|---|
 | **Title** | Τίτλος | Yes | The title of the node |
-| **Notification Content** | Περιεχόμενο Ειδοποίησης | Yes | Define the content of the notification |
+| **Notification Content** | Περιεχόμενο Ειδοποίησης | Yes | Define the content of the notification. Can either be text, supporting dynamic values, or an [Email Template](../email-templates.md). |
+| **Notification Type** | Τύπος Ειδοποίησης | No | Specify the type of notification (email, in-app) |
 | **Recipients** | Παραλήπτες | Yes | Specify the recipients of the notification |
 
 ![Notify node settings](../img/nodes/notify-settings.png)
 ///caption
-Notify node settings menu.///
+Notify node settings menu.
+///
+
+#### Recipient Selection
+
+Recipient selection supports 4 modes:
+
+1. **Specific users**: Select individual users to receive the notification. ![alt text](../img/nodes/notification-recipients/specific-users.png)
+
+2. **Role-based**: Select user groups based on their role in the order (e.g. Author, Supervisor, Operator). ![alt text](../img/nodes/notification-recipients/role-based.png)
+
+3. **User groups**: Select user groups (e.g. Supervisors, Operators) to receive the notification. ![alt text](../img/nodes/notification-recipients/user-groups.png)
+
+4. **Relation-based**: Select users based on their relation to the order (author, assigned operator). ![alt text](../img/nodes/notification-recipients/relation-based.png)
 
 ### <i data-lucide="stamp" class="icon-small"></i> Register
 
@@ -232,7 +250,8 @@ Assign `geodatahub_order_id` to application, if not already set. This marks the 
 
 ![Register node settings](../img/nodes/register-node-settings.png)
 ///caption
-Register node settings menu.///
+Register node settings menu.
+///
 
 ### <i data-lucide="forward" class="icon-small"></i> Transition
 
@@ -253,7 +272,8 @@ Change application status.
 
 ![Transition node settings](../img/nodes/transition-node-settings.png)
 ///caption
-Transition node settings menu.///
+Transition node settings menu.
+///
 
 ### <i data-lucide="webhook" class="icon-small"></i> Webhook
 
