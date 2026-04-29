@@ -76,7 +76,7 @@ Form node in a workflow graph
 #### Purpose
 Collect form field data (`ApplicationData`) from users.
 
-### Runtime behavior
+#### Runtime behavior
 
 - Rendered by the form renderer component.
 - Progress requires required fields to be present.
@@ -98,17 +98,17 @@ Form node settings menu.
 
 ### Boolean
 
-### Purpose
+#### Purpose
 
 Capture a binary choice and branch workflow accordingly.
 
-### Runtime behavior
+#### Runtime behavior
 
 - User chooses true/false and confirms submission.
 - Value is stored as string (`"true"` or `"false"`).
 - Next node is selected by matching child edge condition value.
 
-### Settings
+#### Settings
 
 | Setting | Label | Required | Description |
 |---|---|---|---|
@@ -116,16 +116,16 @@ Capture a binary choice and branch workflow accordingly.
 
 ### Assignation
 
-### Purpose
+#### Purpose
 Assign the order to a specific operator.
 
-### Runtime behavior
+#### Runtime behavior
 
 - Administrator selects one target user.
 - Backend sets `application.operator` from submitted user id (uuid).
 - Flow then proceeds to next child.
 
-### Settings
+#### Settings
 
 | Setting | Label | Required | Description |
 |---|---|---|---|
@@ -133,15 +133,106 @@ Assign the order to a specific operator.
 
 ### Submit
 
-### Purpose
+#### Purpose
 Final submission checkpoint for users to confirm their data and intent before forwarding the order to the Hellenic Space Center team.
 
-### Runtime behavior
+#### Runtime behavior
 
 - User confirms submission.
 - Backend sets `application.final = True` and `submitted_at`.
 - Backend finalizes previous node data and marks application cancellable (`is_cancellable = True`).
 
-### Settings
+#### Settings
 | Setting | Label | Required | Description |
 |---|---|---|---|
+
+
+
+### Harvester Subsystem
+
+#### Purpose
+
+Operational step for launching and monitoring Harvester ingestion tasks. The harvester subsystem is responsible for ingesting completed orders' data bundles into the [Geodatahub catalog service]({{env.CATALOG_URL}}).
+
+!!! warning "Harvester Subsystem"
+    In practice, this node should **always** only be accesible by internal users. 
+
+#### Runtime behavior
+
+- UI allows selecting provider and source folder.
+- Triggers harvester submit API.
+- Polls task status and displays logs.
+- Once a task is completed, user can continue flow.
+
+#### Settings
+| Setting | Label | Required | Description |
+|---|---|---|---|
+
+
+
+### Deliverables
+
+#### Purpose
+
+Create deliverables for the application. Deliverables are the outputs that the Hellenic Space Center team produces and delivers to the applicant as part of the order fulfillment process. Deliverables are `.zip` files containing the data products generated for the applicant. They are either:
+
+- Created by hand and uploaded to the platform storage (S3) or 
+- Generated automatically by backend processes, given a list of files to include in the deliverable bundle.
+
+This node allows linking deliverables to the order, using either of the above methods.
+
+!!! Progress
+    To account for cases of recurrent data deliveries (e.g. twice a day, for 3 days), multiple deliverables can be linked to the order, at different times, instead of just one. The operator must explicitly mark when the final deliverable has been linked, and continue to the next step.
+
+#### Runtime behavior
+- If manual upload: Operator provides deliverable name and S3 path, and backend creates record linked to order.
+- If automatic generation: Operator provides list of files to include, backend sends a task to the task queue to generate the deliverable bundle, and creates record linked to order once the task is completed.
+
+#### Settings
+| Setting | Label | Required | Description |
+|---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node displayed to users |
+| **Permissions** | Δικαιώματα | Yes | Define which user groups can see and interact with the node |
+
+
+## Backend nodes
+
+### Webhook
+
+!!! UI
+    Webhooks are hybrid in the sense that they are backend nodes that can also be rendered in the UI, to show internal users the status of the webhook call and allow retriggering it if necessary.
+
+#### Purpose
+Trigger an outbound HTTP call to an external API, and show call history in the UI.
+
+#### Runtime behavior
+- Backend makes HTTP request to specified URL with given method, headers, and body.
+- Flow progresses immediately after triggering the call, without waiting for response.
+- Call is recorded in the database (`WebhookCall` model) with status and response details.
+
+#### Settings
+| Setting | Label | Required | Description |
+|---|---|---|---|
+| **Title** | Τίτλος | Yes | The title of the node displayed to users |
+| **URL** | URL | Yes | The URL to which the HTTP request will be sent |
+| **HTTP Method** | HTTP Method | Yes | The HTTP method to use|
+| **Payload** | Payload | No | The body of the HTTP request, for methods like POST or PUT |
+| **Authentication** | Authentication | No | Credentials to use for authentication (e.g. API key, Basic Auth). Credentials are created and managed in the [Credentials Management](../credentials-management.md) section. |
+
+![Webhook node settings](../img/nodes/webhook-settings.png)
+///caption
+Webhook node settings menu.
+///
+
+#### Dynamic Values
+
+Webhook node settings support dynamic values for the URL and payload fields, allowing them to be constructed using data from the order context. This is achieved through a templating syntax ([Jinja2](https://jinja.palletsprojects.com/en/3.1.x/)) that references application data fields.
+
+A helper dropdown is available in the UI to assist users in constructing these dynamic values. The dropdown lists all available order data fields that can be used in the templates, such as:
+
+- Order ([Application](https://github.com/HellenicSpaceCenter/geodatahub-erm/blob/main/services/core/modules/flows/orders/models.py#L133)) fields 
+- Form inputs collected in previous nodes. 
+
+When a user selects a field from the dropdown, the corresponding Jinja2 template syntax is copied to the clipboard, which they can then paste into the URL or payload fields to include dynamic data in their webhook calls.
+
+![Webhook dynamic values helper](../img/nodes/webhook-dynamic-values.png)
