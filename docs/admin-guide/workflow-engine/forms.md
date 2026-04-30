@@ -24,7 +24,7 @@ The form editor interface allows admins edit a form's metadata (title, header me
 
 ### Metadata
 
-![Form editor interface - metadata](../img/forms/editor-meta.png)
+![Form editor interface - metadata](../img/forms/editor/meta-section.png)
 ///caption
 Form editor interface, displaying the metadata editing section.
 ///
@@ -37,14 +37,14 @@ Form editor interface, displaying the metadata editing section.
 
 ### Fields
 
-![Form editor interface - fields](../img/forms/editor-fields.png)
+![Form editor interface - fields](../img/forms/editor/fields-section.png)
 ///caption
 Form editor interface, displaying the field management section.
 ///
 
 The field management section allows admins to add, edit, delete and reorder form fields. Each field has a type that determines how it's rendered and what kind of input it accepts. Fields can also have custom labels and configuration options depending on their type.
 
-#### Adding new fields
+#### <i data-lucide="plus" class="icon-small"></i> Adding new fields
 To add a new field, click the "Νέο Πεδίο" button at the bottom of the fields list. A new field will be added to the list, with empty/default values. Configure it and click "Αποθήκευση" at the top-right of the field's editor pane to save it. Until saved, the field will be marked with a "*Draft*" label.
 
 ![Form editor interface - new field](../img/forms/editor/adding-new-field.png)
@@ -53,7 +53,7 @@ Form editor interface, adding a new field.
 ///
 
 
-#### Arranging fields
+#### <i data-lucide="list-ordered" class="icon-small"></i>  Arranging fields
 
 Fields are serially rendered in the order they appear in the list. To change their order, drag the field using the drag pane and drop it in the desired position. Order labels (small gray badge left of the field title) will update to reflect the new order. 
 
