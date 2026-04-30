@@ -59,9 +59,20 @@ Fields are serially rendered in the order they appear in the list. To change the
 
 After reordering, click the "Αποθήκευση Διάταξης" button at the top-left of the form editor interface to persist changes.
 
+#### <i data-lucide="edit" class="icon-small"></i>  Editing fields
 
+When adding a new field or editing an existing one, the field editor pane is used. The available configuration options depend on the field type, but common options include:
 
-
+| Configuration option | Label | Description |
+| -------------------- | ----- | ----------- |
+| Identifier           | Αναγνωριστικό | A unique string identifier for the field, used as the key for storing its value in `ApplicationData`. In the database, this is saved in `FormField.name`. |
+| Label                | Τίτλος | The field's label shown to users. |
+| Description          | Περιγραφή | Optional additional text shown below the field to provide more context or instructions. Supports HTML formatting. |
+| Required             | Υποχρεωτικό | If enabled, users must provide a value for this field before submitting the form. If the field *is not rendered* (see below) this is not enforced. |
+| Field type           | Τύπος πεδίου | Determines how the field is rendered and what kind of input it accepts. See the reference table below for all available types. |
+| Include in exports | Να συμπεριληφθεί στην εξαγωγή | If enabled, this field's value will be included in application data exports (e.g. XLSX export of applications). |
+| Access control | Περιορισμένη πρόσβαση | If enabled, this field's value will only be visible to users with specific role or group. Multiple rules can be combined. |
+| Conditional rendering | Εμφάνιση υπό συνθήκη | If enabled, this field will only be rendered if specific conditions are met. Conditions can check values of other fields in the same or in another form, allowing for dynamic and context-sensitive forms. **Caution**: as forms are **not** tightly coupled with workflows, it is the administrator's responsibility to ensure that a form referenced here is: 1. included in the same workflow, 2. Rendered in a previous step. |
 
 
 ## Form field types reference
