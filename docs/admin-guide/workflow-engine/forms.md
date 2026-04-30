@@ -61,7 +61,7 @@ After reordering, click the "Αποθήκευση Διάταξης" button at th
 
 #### <i data-lucide="edit" class="icon-small"></i>  Editing fields
 
-When adding a new field or editing an existing one, the field editor pane is used. The available configuration options depend on the field type, but common options include:
+When adding a new field or editing an existing one, the field editor pane is used. The available configuration settings depend on the field type, but common settings include:
 
 | Configuration option | Label | Description |
 | -------------------- | ----- | ----------- |
@@ -105,3 +105,102 @@ When adding a new field or editing an existing one, the field editor pane is use
 - `rejection_code` may also update `Application.rejection_code` on write.
 - `conditional` and `end-conditional` are editor/runtime control helpers and are filtered out of visible field inputs.
 
+
+
+## Field type settings
+
+Some field types have additional configuration options that can/must be set in the field editor. 
+
+### Unique choice (`radio`, `select`)
+
+![Form editor interface - unique choice options](../img/forms/fields/radio-options.png)
+///caption
+Options editor for a `radio` field type. Identical interface is used for `select` field types.
+///
+
+
+These field types require a predefined set of options. Each option consists of a label (shown to users) and a value (stored in the database). To add a new option, click the "Add option" button and fill in the label and value. Click on the "x" button at the right of an option to delete it.
+
+
+### String
+
+![Form editor interface - string field](../img/forms/fields/string-validation.png)
+///caption
+Validation rules for a `string` field type.
+///
+
+String fields can have additional validation rules to enforce specific formats or constraints on user input. Validation is performed in the frontend at the time of input, before form submission. The settings allow the admin to define a regex pattern that the input must match in order to be considered valid, and an error message that will be shown to users if their input does not match the pattern.
+
+Validation rules are configured via a Javascript regular expression pattern. You can use [regexr](https://regexr.com/) to create and test your regex patterns. Some examples of common regex patterns:
+| Validation rule | Regex pattern | Description |
+| --------------- | ------------- | ----------- |
+| Email format | `^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$` | Validates that the input is in a valid email format. |
+| Numeric only | `^\d+$` | Validates that the input contains only digits. |
+| Minimum length | `^.{10,}$` | Validates that the input is at least 10 characters long. |
+| Alphanumeric | `^[a-zA-Z0-9]+$` | Validates that the input contains only letters and numbers. |
+| Alphabetic | `^[a-zA-Z]+$` | Validates that the input contains only letters. |
+
+
+### Attachment
+
+![Form editor interface - attachment field](../img/forms/fields/attachment-settings.png)
+///caption
+Settings for an `attachment` field type.
+///
+
+Attachment fields allow users to upload files as part of their form submission. The field editor provides settings to restrict the types of files that can be uploaded and the maximum file size allowed.
+
+### Map
+
+Map type fields have a setting to control whether the user can edit the field's value (by uploading a GeoJSON) or if it's read-only and only renders a GeoJSON value set by a previous workflow step. This allows for use cases where a user needs to review a geometry (e.g. an AOI) defined in a previous step without being able to modify it.
+
+### Data Provider 
+
+![Form editor interface - data provider field](../img/forms/fields/data-provider-settings.png)
+///caption
+Settings for a `data_provider` field type.
+///
+
+Data provider fields have optional settings to filter the selectable providers by:
+
+- **Sensor type**: the setting value is another field in the same form that is expected to contain a sensor type string (e.g. "optical", "thermal", "sar"). Only providers that offer products with that sensor type would be displayed in the list.
+- **Product resolution**: the setting value is another field in the same form that is expected to contain a string value representing the desired product resolution (e.g. "high", "very_high", etc). Only providers that offer products with that resolution or better would be displayed in the list.
+
+
+### Data Product
+
+![Form editor interface - data product field](../img/forms/fields/data-product-settings.png)
+///caption
+Settings for a `data_product` field type.
+///
+
+Data product fields have optional settings to filter the selectable products by:
+
+- **Data provider**: the setting value is another field in the same form that is expected to contain a data provider identifier. This allows for dynamic filtering of selectable products based on the selected data provider in another field. For example, a user could select a data provider in a dropdown field, and the data product field would then only show products from that provider.
+- **Product type**: the setting value is another field in the same form that is expected to contain a product type string (e.g. "optical", "thermal", "sar"). 
+- **Product resolution**: the setting value is another field in the same form that is expected to contain a numeric value representing the desired product resolution in meters. The data product field would then only show products that have that resolution or better.
+
+
+### Number & Number range
+
+![Form editor interface - number field](../img/forms/fields/number-settings.png)
+///caption
+Settings for a `number` field type.
+///
+
+
+`Number` and `number_range` fields have the following additional configuration options:
+
+| Configuration option | Label | Description |
+| -------------------- | ----- | ----------- |
+| Default value | Προεπιλεγμένη τιμή | An optional default numeric value for the field. This value will be pre-filled when the form is rendered, but users can change it before submitting the form. |
+| Units | Μονάδες Μέτρησης | An optional string to indicate the units of the number (e.g. "meters", "degrees", etc). This is for display purposes only and does not affect validation or storage. |
+
+Number fields can also have validation rules to enforce minimum and maximum values. These rules are applied at the time of input, before form submission. The configuration options for validation rules are:
+
+| Configuration option | Label | Description |
+| -------------------- | ----- | ----------- |
+| Apply validation rules | Εφαρμογή κανόνων επαλήθευσης | If enabled, min/max validation rules will be applied to the field. |
+| Min | Minimum size | If validation rules are applied, this sets the minimum value that users can enter. |
+| Max | Maximum size | If validation rules are applied, this sets the maximum value that users can enter. |
+|
