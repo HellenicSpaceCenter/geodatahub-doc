@@ -96,7 +96,6 @@ When adding a new field or editing an existing one, the field editor pane is use
 | `datetime`        | Ημερομηνία και Ώρα          | UTC ISO datetime string              | Rendered           |
 | `conditional`     | Αρχή δομής ελέγχου          | control marker                       | Control-only       |
 | `end-conditional` | Τέλος δομής ελέγχου         | control marker                       | Control-only       |
-| `email`           | Email                       | string (email format)                | Available in model |
 | `rejection_code`  | Κωδικός Απόρριψης           | rejection code string                | Rendered           |
 
 ### Notes on special/runtime-only behavior
