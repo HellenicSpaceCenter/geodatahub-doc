@@ -98,7 +98,7 @@ nav:
                             - Introduction: admin-guide/workflow-engine/index.md
                             - Workflows: admin-guide/workflow-engine/workflows.md
                             - Nodes: admin-guide/workflow-engine/nodes.md
-                    #             - Forms: admin-guide/workflow-engine/forms.md
+                            - Forms: admin-guide/workflow-engine/forms.md
 
         - User Guide:
                   - Overview: user-guide/index.md
