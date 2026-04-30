@@ -132,6 +132,7 @@ Validation rules for a `string` field type.
 String fields can have additional validation rules to enforce specific formats or constraints on user input. Validation is performed in the frontend at the time of input, before form submission. The settings allow the admin to define a regex pattern that the input must match in order to be considered valid, and an error message that will be shown to users if their input does not match the pattern.
 
 Validation rules are configured via a Javascript regular expression pattern. You can use [regexr](https://regexr.com/) to create and test your regex patterns. Some examples of common regex patterns:
+
 | Validation rule | Regex pattern | Description |
 | --------------- | ------------- | ----------- |
 | Email format | `^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$` | Validates that the input is in a valid email format. |
@@ -161,7 +162,7 @@ Map type fields have a setting to control whether the user can edit the field's 
 Settings for a `data_provider` field type.
 ///
 
-Data provider fields have optional settings to filter the selectable providers by:
+Data provider fields display a selection of [Data Providers](../data-providers.md) and have optional settings to filter the selectable providers by:
 
 - **Sensor type**: the setting value is another field in the same form that is expected to contain a sensor type string (e.g. "optical", "thermal", "sar"). Only providers that offer products with that sensor type would be displayed in the list.
 - **Product resolution**: the setting value is another field in the same form that is expected to contain a string value representing the desired product resolution (e.g. "high", "very_high", etc). Only providers that offer products with that resolution or better would be displayed in the list.
