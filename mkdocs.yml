@@ -102,13 +102,12 @@ nav:
 
         - User Guide:
                   - Overview: user-guide/index.md
-        #           - Dashboard: user-guide/dashboard.md
-        #           - Creating Orders: user-guide/creating-orders.md
-        #           - Order Management: user-guide/order-management.md
-        #           - Workflows: user-guide/workflows.md
-        #           - Chat Collaboration: user-guide/chat.md
-        #           - File Management: user-guide/file-management.md
-        #           - Deliverables: user-guide/deliverables.md
-        #           - Reports & Analytics: user-guide/analytics.md
-        #           - FAQ: user-guide/faq.md
+                  - Getting Started: user-guide/getting-started.md
+                  - Navigation: user-guide/navigation.md
+                  - Workspaces: user-guide/workspaces.md
+                  - Orders:
+                            - Orders Overview: user-guide/orders/index.md
+                            - Managing Orders: user-guide/orders/managing-orders.md
+                            - Placing an Order: user-guide/orders/placing-orders.md
+                            - Order Specification: user-guide/orders/order-specification.md
 
