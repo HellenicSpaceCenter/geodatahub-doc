@@ -147,7 +147,9 @@ The date range selector allows you to define the time period for which you need 
 
 ---
 
-## Step 3: Select Data/Sensor Type
+## Step 3: Select Data/Sensor Type [tasking orders]
+> This step is activated for future orders only.
+
 
 ![Sensor Type Selection](../img/order-creation/sensor-type-selection.png)
 ///caption
@@ -169,13 +171,63 @@ Select the sensor type that matches your application. This selection affects whi
 
 ---
 
+
+## Step 3: Discover data availability [archival orders]
+> This step is activated for past date ranges only.
+
+If the selected date range is in the past, GeoDataHub will automatically search the Hellenic Space Center's catalog for available data matching your AOI and date range. 
+
+![Archive Search](../img/order-creation/archive-order-search.png)
+
+
+The archive search results show the available data for your selected area of interest and date range. You will be presented with a list of available products, including their acquisition dates, sensor types, and coverage. The footprints of the available data are displayed on the map, allowing you to visually confirm coverage before proceeding. Hovering a product in the list will highlight its footprint on the map.
+
+### Adding Products to Your Order
+
+On each product you can click **+ Add** to include it in your order. Already selected products will show a **checkmark**.
+
+![Basket with products](../img/order-creation/basket-with-products.png)
+///caption
+The basket provides a brief summary of your selected products before submission and allows you to proceed to the detailed order specification form. You can remove products form the basket by clicking the "x" button on the top-right of each product.
+///
+
+
+
+
+
+### Inspecting Product Details
+
+Each product in the list has 3 buttons for inspecting its details:
+    - Show/hide preview on the map
+    - Zoom map to the product's bounding box
+    - Open a dialog with detailed product information
+
+![Visualize Product](../img/order-creation/visualize-product.png)
+///caption
+If a product has a preview available, you can add it to the map for visual inspection. 
+///
+
+![Product details](../img/order-creation/product-details.png)
+///caption
+The product details dialog provides comprehensive information, including acquisition date, sensor type, and coverage.
+///
+
+
+### Not found what you need?
+If the archive search does not return any products for your selected area and date range, or if the available products do not meet your requirements, you can create a **tasking order** instead. 
+
+![Fallback to tasking](../img/order-creation/fallback-to-tasking.png)
+
+This will switch the panel to the tasking order workflow, allowing you to specify the sensor type and proceed to the next step, where you can specify your requirements for a new acquisition. This workflow is essentially a request to the HSC to acquire archival data from a third-party provider.
+![alt text](../img/order-creation/archive-order-panel-fallback-to-tasking.png)
+
 ## Proceeding to create the order
 
 Once you have defined:
 
 - ✅ Area of interest
 - ✅ Date range
-- ✅ Sensor type
+- ✅ Sensor type (for tasking) or selected products (for archival)
 
 The **basket** indicator at the top of the map page will become active, confirming you are ready to continue. Click **Proceed** to move to the full order specification form.
 
