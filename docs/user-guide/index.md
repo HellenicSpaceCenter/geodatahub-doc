@@ -11,7 +11,6 @@ GeoDataHub is the Hellenic Space Center's (HSC) platform for public sector organ
 - Browse and request **archival imagery** from the HSC catalog and third-party providers
 - Place **tasking orders** for future satellite acquisitions via the Greek microsatellite constellation or external operators
 - Track orders through every step of the processing lifecycle
-- Manage deliverables and access completed datasets
 
 !!! info "Data Sources"
     GeoDataHub aggregates satellite data from three sources:

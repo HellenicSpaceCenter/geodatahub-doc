@@ -11,9 +11,16 @@ GeoDataHub is a web-based platform accessible from any modern browser. Navigate 
 !!! note
     The landing page is the only part of the platform accessible without authentication. All functionality — including viewing orders, placing requests, and managing your workspace — requires you to be logged in.
 
+![Landing page](./img/landing-page.png)
+///caption
+Landing page of the GeoDataHub platform
+///
+
 ---
 
 ## Logging In
+
+![](./img/login-page.png)
 
 GeoDataHub supports three authentication methods. Choose the one that applies to your account:
 
@@ -23,7 +30,7 @@ GeoDataHub supports three authentication methods. Choose the one that applies to
 
     TaxisNet is the standard Greek government authentication system. If you use TaxisNet for other public services (e.g., tax filings), you can use the same credentials here.
 
-    1. On the landing page, click **Log in with TaxisNet**
+    1. On the login page, click **TAXISNET**
     2. You will be redirected to the TaxisNet authentication portal
     3. Enter your TaxisNet credentials and confirm
     4. You will be returned to GeoDataHub and logged in automatically
@@ -31,15 +38,17 @@ GeoDataHub supports three authentication methods. Choose the one that applies to
     !!! tip
         TaxisNet login is recommended for most public sector users as it requires no separate account management.
 
-=== ":material-satellite-variant: Axis-3 Hub"
+=== ":material-satellite-variant: Governmental Hub (AXIS-3 of the GNSSP)"
 
     **For users affiliated with the governmental Axis-3 hub**
 
-    The Axis-3 Hub is the governmental integration platform associated with the Greek microsatellite program.
+    The Governmental Hub is the governmental integration platform associated with the Greek microsatellite program.
 
-    1. On the landing page, click **Log in with ACS-3**
+    1. On the login page, click **AXIS-3**
     2. Complete authentication on the Axis-3 portal
     3. You will be returned to GeoDataHub and logged in automatically
+     -----
+     Users coming form the Governmental Hub via redirection and/or order submission workflows will automatically be logged in via the AXIS-3 authentication provider and have access to the respective, dedicated, workspace. 
 
 === ":material-account: Local Account"
 

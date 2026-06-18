@@ -10,17 +10,19 @@ The platform layout consists of four key areas:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  [Top Bar]  Breadcrumbs │ Notifications │ User Menu      │
+│  [Top Bar]  Breadcrumbs │ Notifications │ User Menu     │
 ├──────────┬──────────────────────────────────────────────┤
-│          │                                               │
-│ Sidebar  │              Main Content Area                │
-│   Nav    │                                               │
-│          │                                               │
-│ [Org Mgmt│                                               │
-│  if admin│                                               │
-│ selected]│                                               │
+│          │                                              │
+│ Sidebar  │              Main Content Area               │
+│   Nav    │                                              │
+│          │                                              │
+│ [Org Mgmt│                                              │
+│  if admin│                                              │
+│ selected]│                                              │
 └──────────┴──────────────────────────────────────────────┘
 ```
+
+![[Pasted image 20260618154129.png]]
 
 ---
 
@@ -69,7 +71,7 @@ The **bell icon** in the top bar opens your notifications panel.
 - When there are no unread notifications, the panel will display an empty state
 
 !!! note
-    Notifications are workspace-aware. You will only see notifications relevant to the currently active workspace.
+    Notifications are [workspace-aware](./workspaces.md). You will only see notifications relevant to the currently active workspace.
 
 ### User Menu
 
