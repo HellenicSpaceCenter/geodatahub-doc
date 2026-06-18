@@ -47,8 +47,9 @@ GeoDataHub supports three authentication methods. Choose the one that applies to
     1. On the login page, click **AXIS-3**
     2. Complete authentication on the Axis-3 portal
     3. You will be returned to GeoDataHub and logged in automatically
-     -----
-     Users coming form the Governmental Hub via redirection and/or order submission workflows will automatically be logged in via the AXIS-3 authentication provider and have access to the respective, dedicated, workspace. 
+     
+    !!! info "Coming from the Governmental Hub website"
+        Users coming from the Governmental Hub via redirection and/or order submission workflows will automatically be logged in via the AXIS-3 authentication provider and have access to the respective, dedicated, workspace. 
 
 === ":material-account: Local Account"
 

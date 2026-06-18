@@ -2,6 +2,10 @@
 
 After defining your area of interest, date range, and data type on the map, you are directed to the **order specification form**. This form collects the detailed parameters HSC needs to fulfill your request. Once complete, you will submit the order for HSC review.
 
+
+!!! warning "Updates"
+    The Hellenic Space Center may change the order parameters required at any moment. This document is provided for reference only. Always refer to the live order form in the platform for the most up-to-date requirements.
+
 ---
 
 ## Overview

@@ -9,20 +9,20 @@ The GeoDataHub interface is organized around a consistent set of navigation elem
 The platform layout consists of four key areas:
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  [Top Bar]  Breadcrumbs │ Notifications │ User Menu     │
-├──────────┬──────────────────────────────────────────────┤
-│          │                                              │
-│ Sidebar  │              Main Content Area               │
-│   Nav    │                                              │
-│          │                                              │
-│ [Org Mgmt│                                              │
-│  if admin│                                              │
-│ selected]│                                              │
-└──────────┴──────────────────────────────────────────────┘
+┌───────────┬──────────────────────────────────────────────┐
+│           |  Breadcrumbs │ Notifications │ User Menu     │
+├───────────┬──────────────────────────────────────────────┤
+│           │                                              │
+│ Sidebar   │              Main Content Area               │
+│   Nav     │                                              │
+│           │                                              │
+│ [Org Mgmt │                                              │
+│  if admin │                                              │
+│ selected] │                                              │
+└───────────┴──────────────────────────────────────────────┘
 ```
 
-![[Pasted image 20260618154129.png]]
+![Interface layout](./img/interface-layout.png)
 
 ---
 
@@ -65,16 +65,25 @@ Home > Orders > Order #12345 > Details
 
 ### Notifications
 
+![Notification widget](./img/notifications-widget.png)
+
+///caption
+The notifications panel shows updates related to your orders and workspace activity.
+///
+
+
 The **bell icon** in the top bar opens your notifications panel.
 
 - Notifications are shown when there are updates to your orders (e.g., status changes, responses from HSC)
 - When there are no unread notifications, the panel will display an empty state
+- You can mark all notifications as 'read'
 
 !!! note
     Notifications are [workspace-aware](./workspaces.md). You will only see notifications relevant to the currently active workspace.
 
 ### User Menu
 
+![User menu](./img/user-menu.png)
 Click your **user icon** in the top bar to access:
 
 | Option | Description |
@@ -85,6 +94,7 @@ Click your **user icon** in the top bar to access:
 ---
 
 ## Workspace Selector
+![Workspace selector](./img/workspace-selector.png)
 
 The **workspace selector** is accessible from both the top bar and the sidebar. It lets you switch between your personal workspace and any organizational workspaces you belong to.
 

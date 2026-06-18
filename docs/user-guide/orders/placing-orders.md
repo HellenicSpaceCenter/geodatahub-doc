@@ -6,16 +6,21 @@ This page walks you through the first stage of creating a new satellite data req
 
 ## Starting a New Order
 
-To begin creating an order, click **New Order** in the sidebar. You will be taken to the **order creation map** — an interactive map interface where you define the core parameters of your request.
+To begin creating an order, click **New Order** in the sidebar. You will be taken to the **order creation page** — an interactive map interface where you define the core parameters of your request.
 
 !!! warning "Check your workspace first"
     Before creating an order, confirm that the correct workspace is active. The order will be attributed to the organization (or personal account) of the workspace you are currently using. See [Workspaces](../workspaces.md) for how to switch.
 
 ---
 
-## The Order Creation Map
+## The Order Creation Page
 
-The map interface is your starting point for all new orders. It provides tools to define **where** and **when** you need data, and **what type** of satellite data you require.
+The map interface of the order creation page is your starting point for all new orders. It provides tools to define **where** and **when** you need data, and **what type** of satellite data you require.
+
+![Order Creation Page](../img/order-creation/page.png)
+///caption
+The order creation page is an interactive map interface where you define the area of interest, date range, and data type for your satellite data request. Once these parameters are set, you can proceed to the detailed order specification form.
+///
 
 ### Map Controls
 
@@ -52,17 +57,14 @@ Your **area of interest (AOI)** is the geographic boundary that defines where yo
 
 === ":material-draw: Draw on Map"
 
-    Use the drawing tool to create a custom polygon directly on the map.
+    Use the drawing tool to create a custom rectangular area directly on the map.
 
-    1. Select the **Draw** tool from the map toolbar
-    2. Click on the map to place the first vertex of your polygon
-    3. Continue clicking to add additional vertices
-    4. Close the polygon by clicking on the first vertex or double-clicking
+    1. Select the **Draw** option from the AOI section on the right panel
+    2. Click on the map to place the top-left corner of your rectangle
+    3. Expand the rectangle
+    4. Click on the map again to place the bottom-right corner and finalize the AOI
 
-    After drawing, you can adjust the shape by dragging individual vertices.
-
-    !!! tip
-        Drawing is ideal for irregular areas that don't align with administrative boundaries.
+    ![AOI from Drawing](../img/order-creation/aoi-from-drawing.png)
 
 === ":material-upload: Upload a File"
 
@@ -74,7 +76,7 @@ Your **area of interest (AOI)** is the geographic boundary that defines where yo
     - **Shapefile** (`.shp` + associated files, typically provided as a `.zip`)
     - **KML** (`.kml`)
 
-    1. Click the **Upload** button in the map toolbar
+    1. Click the **Upload** button on the AOI section of the right panel
     2. Select your file
     3. The uploaded boundary will appear on the map
 
@@ -85,12 +87,16 @@ Your **area of interest (AOI)** is the geographic boundary that defines where yo
 
     Select an existing Greek administrative unit as your AOI.
 
-    1. Enable the appropriate administrative layer (Regions, Regional Units, or Municipalities)
-    2. Click on the administrative unit you want to use
-    3. The unit's boundary will be set as your area of interest
+    1. Click the **Administrative Boundary** option in the AOI section of the right panel
+    2. A dialog will open: search for a region, regional unit, or municipality by name (at least 4 characters)
+    3. Select the administrative unit
+    4. Click OK to set it as your AOI and close the dialog
 
-    !!! example
-        To request data for the entire Region of Crete, enable the **Regions** layer, then click on Crete on the map. The full regional boundary will be set as your AOI automatically.
+    ![Search Administrative Unit](../img/order-creation/search-admin-unit.png)
+
+    ![AOI from Administrative Boundary](../img/order-creation/aoi-from-admin.png)
+
+
 
 ---
 
@@ -133,34 +139,50 @@ The date range you select determines the **type of order** that will be created:
     
     If you need both archival and future data for the same area, create two separate orders.
 
+
+![Date Range Selector](../img/order-creation/date-range-selector.png)
+///caption
+The date range selector allows you to define the time period for which you need satellite data. The selected range determines whether the order is archival (past) or tasking (future).
+///
+
 ---
 
-## Step 3: Select Data Type
+## Step 3: Select Data/Sensor Type
+
+![Sensor Type Selection](../img/order-creation/sensor-type-selection.png)
+///caption
+After defining your area of interest and date range, select the type of satellite data you need. The available sensor types are Optical/Multispectral, Thermal Infrared, and Synthetic Aperture Radar (SAR).
+///
 
 Once your AOI and date range are set, select the **type of satellite data** you need:
 
-| Data Type | Description | Typical Use Cases |
+| Sensor Type | Description | Typical Use Cases |
 |-----------|-------------|-------------------|
 | **Optical / Multispectral** | Standard visible-light and multispectral imagery | Land use mapping, vegetation analysis, urban monitoring |
 | **Thermal Infrared** | Surface temperature measurements from infrared sensors | Urban heat islands, agricultural drought monitoring, wildfire detection |
 | **Synthetic Aperture Radar (SAR)** | Radar-based imagery that penetrates clouds and works in all weather | Flood mapping, infrastructure monitoring, night-time acquisitions |
 
-Select the data type that matches your application. This selection affects which data providers and products are available in the next step.
+Select the sensor type that matches your application. This selection affects which data providers and products are available in the next step.
 
-!!! info "Provider availability varies by data type"
-    Not all satellite data providers offer every data type. For example, thermal infrared data may only be available from specific operators. The available providers are shown after you select your data type.
+!!! info "Provider availability varies by sensor type"
+    Not all satellite data providers offer every sensor type. For example, thermal infrared data may only be available from specific operators.
 
 ---
 
-## Proceeding to the Order Form
+## Proceeding to create the order
 
 Once you have defined:
 
 - ✅ Area of interest
 - ✅ Date range
-- ✅ Data type
+- ✅ Sensor type
 
 The **basket** indicator at the top of the map page will become active, confirming you are ready to continue. Click **Proceed** to move to the full order specification form.
+
+![Basket](../img/order-creation/basket-indicator.png)
+///caption
+The basket provides a brief summary of your selected parameters before submission, and allows you to proceed to the detailed order specification form.
+///
 
 !!! note "What happens next"
     Your order is created as a **Draft** and you are taken to the detailed order specification form. No request has been sent to HSC yet — the draft is only visible to you until you submit it.

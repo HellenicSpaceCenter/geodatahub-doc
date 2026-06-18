@@ -6,6 +6,11 @@ The **Orders** page is your main dashboard for tracking all satellite data reque
 
 ## The Orders List
 
+![Orders list](../img/orders-list.png)
+///caption
+The orders list page shows all orders submitted under your currently active workspace. You can filter and sort the list to find specific orders, and click any order to view its details.
+///
+
 After logging in, you are taken directly to your orders list — your application space. This page displays all orders submitted under your currently active workspace.
 
 !!! info "Workspace-dependent view"
@@ -16,11 +21,16 @@ After logging in, you are taken directly to your orders list — your applicatio
 Each order in the list shows:
 
 - **Order ID** — a unique identifier for the order
+- **Area of Interest** — the geographic region defined in the order
 - **Status** — the current lifecycle stage (Draft, Submitted, Accepted, etc.)
-- **Date submitted** — when the order was placed
-- **Summary information** — key parameters such as data type and area of interest
+- **Creation date** — when the order was first created
+- **Submission date** — when the order was formally submitted to HSC
 
+![order-list-item](../img/order-list-item.png)
+
+Each item also includes an **Actions** menu (three dots) with several options, depending on the order's current status. See [Order Actions](#order-actions) for details.
 ---
+
 
 ## Filtering and Sorting
 
@@ -66,6 +76,11 @@ The step navigator displays all workflow stages for the order. Steps you have al
 
 ## Order Actions
 
+![Order Actions Menu](../img/order-actions-menu.png)
+///caption
+The order actions menu provides quick access to common operations for the order, such as copying the order ID, viewing history, duplicating, or cancelling the order.
+///
+
 Every order has an **Actions** menu (accessible from the order details page) with the following options:
 
 ### Copy Order ID
@@ -95,29 +110,17 @@ Cancels the submitted order and stops further processing.
 
     Contact HSC directly if you need to stop processing on an accepted order.
 
+
+### Delete Order
+Deletes the order from your workspace. This option is only available for orders in **Draft** status. Once deleted, the order cannot be recovered.
+
 ### Export to Excel
 
 Downloads the order's data as an Excel (`.xlsx`) file. The export includes all form fields and current order parameters — useful for record-keeping or sharing order details outside the platform.
 
 ---
 
-## Reviewing the Order Form
 
-From the order details page, you can review all the parameters you submitted in the original order form:
-
-| Field | Description |
-|-------|-------------|
-| **Area of Interest** | The geographic boundary you defined |
-| **Date Range** | Start and end dates for the requested data |
-| **Time Series** | Whether multiple acquisitions throughout the period were requested |
-| **Data Type** | Optical/multispectral, thermal, or SAR |
-| **Resolution** | Spatial resolution preference |
-| **Cloud Cover** | Maximum acceptable cloud cover percentage |
-| **Acquisition Angle** | Sensor angle preference |
-| **Priority** | Whether the order was flagged as urgent |
-| **Comments** | Any additional notes submitted with the order |
-
----
 
 ## Next Steps
 
