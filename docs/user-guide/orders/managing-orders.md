@@ -51,17 +51,10 @@ Opens a full audit log of all changes and state transitions for the order — in
 
 Creates a new draft order pre-populated with all the same parameters as the current order. This is useful when you need to submit a similar request for a different area or time period without starting from scratch.
 
-!!! note
-    The duplicate starts as a **Draft** and must be reviewed and submitted before it is sent to HSC.
 
 ### Cancel Order
 
-Cancels the submitted order and stops further processing.
-
-!!! warning "Cancellation is only available in Submitted status"
-    You can only cancel an order that has been submitted but not yet accepted by HSC. If the order has already been accepted, the cancel option will not be available.
-
-    Contact HSC directly if you need to stop processing on an accepted order.
+Cancels the submitted order and stops further processing. You can only cancel an order that has been submitted but not yet accepted by HSC. If the order has already been accepted, the cancel option will not be available.
 
 
 ### Delete Order
