@@ -50,23 +50,15 @@ The **top bar** spans the full width of the page and contains three elements: th
 
 ### Breadcrumbs
 
-The breadcrumb trail appears in the top bar and shows your current location within the platform hierarchy.
-
-```
-Home > Orders > Order #12345 > Details
-```
+The breadcrumb trail appears in the top bar and shows your current location within the platform hierarchy. Some pages (e.g. order lifecycle/details page) expose an interactive breadcrumb control that allows performing actions in the current (leaf) page. 
 
 - Click any item in the breadcrumb to navigate directly back to that level
-- Breadcrumbs are especially useful when navigating deeply nested order detail pages
 - They update automatically as you move through the platform
 
-!!! example "Using breadcrumbs"
-    If you are viewing a specific order's submission step and want to return to your full orders list, click **Orders** in the breadcrumb trail rather than using the browser's back button.
 
 ### Notifications
 
 ![Notification widget](./img/notifications-widget.png)
-
 ///caption
 The notifications panel shows updates related to your orders and workspace activity.
 ///
@@ -78,18 +70,15 @@ The **bell icon** in the top bar opens your notifications panel.
 - When there are no unread notifications, the panel will display an empty state
 - You can mark all notifications as 'read'
 
-!!! note
-    Notifications are [workspace-aware](./workspaces.md). You will only see notifications relevant to the currently active workspace.
 
 ### User Menu
 
 ![User menu](./img/user-menu.png)
+
 Click your **user icon** in the top bar to access:
 
-| Option | Description |
-|--------|-------------|
-| **Account Management** | View and edit your profile settings |
-| **Log Out** | Sign out of the platform |
+- **Account Management**: View and edit your profile settings
+- **Log Out**: Sign out of the platform
 
 ---
 
@@ -105,7 +94,6 @@ For a full explanation of workspaces and how they affect your experience, see [W
 
 ---
 
-## Quick Navigation Tips
 
 !!! tip "Efficient navigation"
     - Use **breadcrumbs** to move up the page hierarchy without losing context

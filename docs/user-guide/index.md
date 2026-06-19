@@ -12,30 +12,24 @@ GeoDataHub is the Hellenic Space Center's (HSC) platform for public sector organ
 - Place **tasking orders** for future satellite acquisitions via the Greek microsatellite constellation or external operators
 - Track orders through every step of the processing lifecycle
 
-!!! info "Data Sources"
-    GeoDataHub aggregates satellite data from three sources:
 
-    | Source | Description |
-    |--------|-------------|
-    | **HSC Catalog** | Imagery already acquired and stored by the Hellenic Space Center |
-    | **Greek Microsatellite Constellation** | Future acquisitions tasked to the national constellation |
-    | **Third-Party Providers** | Commercial satellite operators sourced on your behalf by HSC |
+GeoDataHub aggregates satellite data from three sources:
+
+| Source | Description |
+|--------|-------------|
+| **HSC Catalog** | Imagery already acquired and stored by the Hellenic Space Center |
+| **Greek Microsatellite Constellation** | Future acquisitions tasked to the national constellation |
+| **Third-Party Providers** | Commercial satellite operators sourced on the user's behalf by the HSC |
 
 ---
 
 ## Who This Guide Is For
 
-=== "End Users"
+ - End Users: Users who place satellite data orders — either as individuals or on behalf of their organization. This guide will walk you through every step from login to receiving your data.
 
-    Users who place satellite data orders — either as individuals or on behalf of their organization. This guide will walk you through every step from login to receiving your data.
+ - Organization Administrators: Users who manage an organizational workspace. In addition to placing orders, administrators have access to organization management tools covered in the [Workspaces](workspaces.md) section.
 
-=== "Organization Administrators"
-
-    Users who manage an organizational workspace. In addition to placing orders, administrators have access to organization management tools covered in the [Workspaces](workspaces.md) section.
-
-=== "Guest / New Users"
-
-    If this is your first time using GeoDataHub, start with [Getting Started](getting-started.md) to set up your account and learn the interface.
+ - Guest / New Users: If this is your first time using GeoDataHub, start with [Getting Started](getting-started.md) to set up your account and learn the interface.
 
 ---
 
@@ -53,25 +47,27 @@ GeoDataHub is the Hellenic Space Center's (HSC) platform for public sector organ
 
 ---
 
+## Governmental Hub (AXIS-3 of the GNSSP)
+
+The Governmental Hub is the governmental integration platform associated with the Greek microsatellite program. Users with access to the Governmental Hub can log in via AXIS-3 authentication and access a dedicated workspace. A user may have an active Governmental Hub workspace along with other personal or organizational workspaces. 
+
+The Governmental Hub workspace behaves differently from other workspaces: when it is active the user can only place tasking orders, using a **dedicated parameters form** that **differs** from the standard one. The form exposes a specific set of parameters tailored to the microsatellite constellation's capabilities and operational constraints. 
+
+---
+
 ## Key Concepts
 
 ### Archival vs. Tasking Orders
 
 The type of order you place depends on when the data was (or will be) acquired:
 
-**Archival Orders**
+- **Archival Orders**
 :   The data already exists. You are requesting access to imagery captured in the past — either from the HSC catalog or from a third-party archive. Ideal when you need historical dataor quick turnaround.
 
-**Tasking Orders**
+- **Tasking Orders**
 :   The data does not yet exist. You are requesting a future satellite acquisition. HSC will either task the microsatellite constellation or place a tasking order with a commercial provider on your behalf.
 
 The platform determines the order type automatically based on the date range you select when creating an order.
-
-### Governmental Hub (AXIS-3 of the GNSSP)
-
-The Governmental Hub is the governmental integration platform associated with the Greek microsatellite program. Users with access to the Governmental Hub can log in via AXIS-3 authentication and access a dedicated workspace. A user may have an active Governmental Hub workspace along with other personal or organizational workspaces. 
-
-The Governmental Hub workspace behaves differently from other workspaces: when it is active the user can only place tasking orders, using a **dedicated parameters form** that **differs** from the standard one. The form exposes a specific set of parameters tailored to the microsatellite constellation's capabilities and operational constraints. 
 
 ### Workspaces
 
@@ -80,4 +76,4 @@ Each user can belong to multiple **workspaces** — one personal workspace and o
 ---
 
 !!! question "Need help?"
-    If you encounter an issue not covered in this guide, contact your organization administrator or reach out to the Hellenic Space Center support team.
+    If you encounter an issue not covered in this guide, contact the Hellenic Space Center via [email](mailto:info@hsc.gov.gr).
