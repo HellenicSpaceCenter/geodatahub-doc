@@ -78,6 +78,6 @@ GeoDataHub supports two distinct types of orders, determined by the date range y
 
 | Page | Description |
 |------|-------------|
-| [Managing Orders](managing-orders.md) | View, filter, sort, and act on your existing orders |
 | [Placing an Order](placing-orders.md) | Create a new satellite data request using the map interface |
-| [Order Specification](order-specification.md) | Complete the detailed order form and submit to HSC |
+| [Managing Orders](managing-orders.md) | View, filter, sort, and act on your existing orders |
+| [Lifecycle / Order Details](lifecycle.md) | Track the progress of an order through its lifecycle, review submitted data, and respond to HSC requests |
