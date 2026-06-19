@@ -44,8 +44,6 @@ Copies the unique order identifier to your clipboard. Useful when referencing th
 
 Opens a full audit log of all changes and state transitions for the order — including timestamps and the actor responsible for each change.
 
-!!! tip
-    Use the order history to see exactly when HSC received, reviewed, and acted on your order.
 
 ### Duplicate Order
 
