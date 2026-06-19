@@ -57,17 +57,21 @@ GeoDataHub is the Hellenic Space Center's (HSC) platform for public sector organ
 
 ### Archival vs. Tasking Orders
 
-!!! abstract "Two types of data requests"
+The type of order you place depends on when the data was (or will be) acquired:
 
-    The type of order you place depends on when the data was (or will be) acquired:
+**Archival Orders**
+:   The data already exists. You are requesting access to imagery captured in the past — either from the HSC catalog or from a third-party archive. Ideal when you need historical dataor quick turnaround.
 
-    **Archival Orders**
-    :   The data already exists. You are requesting access to imagery captured in the past — either from the HSC catalog or from a third-party archive. Ideal when you need historical data or quick turnaround.
+**Tasking Orders**
+:   The data does not yet exist. You are requesting a future satellite acquisition. HSC will either task the microsatellite constellation or place a tasking order with a commercial provider on your behalf.
 
-    **Tasking Orders**
-    :   The data does not yet exist. You are requesting a future satellite acquisition. HSC will either task the microsatellite constellation or place a tasking order with a commercial provider on your behalf.
+The platform determines the order type automatically based on the date range you select when creating an order.
 
-    The platform determines the order type automatically based on the date range you select when creating an order.
+### Governmental Hub (AXIS-3 of the GNSSP)
+
+The Governmental Hub is the governmental integration platform associated with the Greek microsatellite program. Users with access to the Governmental Hub can log in via AXIS-3 authentication and access a dedicated workspace. A user may have an active Governmental Hub workspace along with other personal or organizational workspaces. 
+
+The Governmental Hub workspace behaves differently from other workspaces: when it is active the user can only place tasking orders, using a **dedicated parameters form** that **differs** from the standard one. The form exposes a specific set of parameters tailored to the microsatellite constellation's capabilities and operational constraints. 
 
 ### Workspaces
 

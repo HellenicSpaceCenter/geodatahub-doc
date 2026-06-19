@@ -110,7 +110,8 @@ nav:
                   - Workspaces: user-guide/workspaces.md
                   - Orders:
                             - Orders Overview: user-guide/orders/index.md
-                            - Managing Orders: user-guide/orders/managing-orders.md
-                            - Placing an Order: user-guide/orders/placing-orders.md
-                            - Order Specification: user-guide/orders/order-specification.md
+                            - 1. Placing an Order: user-guide/orders/placing-orders.md
+                            - 2. Order Lifecycle: user-guide/orders/lifecycle.md
+                            - 3. Managing Orders: user-guide/orders/managing-orders.md
+
 

@@ -1,20 +1,13 @@
 # Managing Orders
 
-The **Orders** page is your main dashboard for tracking all satellite data requests associated with your active workspace. This page explains how to navigate, filter, and act on existing orders.
+The [**Orders**]({{ env.ERM_PRODUCTION_URL}}applications) page is your main dashboard for tracking all satellite data requests associated with your active workspace. You will be redirected to this page after logging in.
 
----
+All data presented on the page is referring to your **active workspace**. Switching workspaces will show a completely different set of orders. Always confirm the correct workspace is selected before searching for a specific order.
 
-## The Orders List
-
-![Orders list](../img/orders-list.png)
+![Orders list page](../img/orders-list.png)
 ///caption
 The orders list page shows all orders submitted under your currently active workspace. You can filter and sort the list to find specific orders, and click any order to view its details.
 ///
-
-After logging in, you are taken directly to your orders list — your application space. This page displays all orders submitted under your currently active workspace.
-
-!!! info "Workspace-dependent view"
-    The orders list shows only orders belonging to your **active workspace**. Switching workspaces will show a completely different set of orders. Always confirm the correct workspace is selected before searching for a specific order.
 
 ### What You'll See
 
@@ -29,48 +22,8 @@ Each order in the list shows:
 ![order-list-item](../img/order-list-item.png)
 
 Each item also includes an **Actions** menu (three dots) with several options, depending on the order's current status. See [Order Actions](#order-actions) for details.
----
 
-
-## Filtering and Sorting
-
-The orders list includes tools to help you find specific orders quickly.
-
-### Filtering by Status
-
-Use the **status filter** to narrow the list to orders in a particular lifecycle stage:
-
-- Draft
-- Submitted
-- Under Review
-- Accepted
-- Processing
-- Delivered
-- Cancelled / Rejected
-
-Select one or more statuses to filter the list. Click **Clear** to remove all active filters and return to the full list.
-
-### Sorting
-
-Use the **sort** controls to reorder the list by fields such as submission date or status. This is useful when you have a large number of orders and need to prioritize recently submitted or recently updated ones.
-
----
-
-## Viewing Order Details
-
-Click any order in the list to open its **order details page**.
-
-The details page is organized into **steps** — each step corresponds to a stage in the order's lifecycle. A step navigator at the top of the page lets you jump directly to any step.
-
-### Step Navigator
-
-The step navigator displays all workflow stages for the order. Steps you have already passed through are shown as completed, the current step is highlighted, and future steps appear as upcoming.
-
-| Step | What It Contains |
-|------|-----------------|
-| **Order Form** | The original data requirements you submitted |
-| **Order Submission** | The formal submission record and current status |
-| *(Additional steps)* | Vary by order type and HSC processing workflow |
+Clicking on an order will open the [**Order Details** page](order-details.md), where you can view the order's parameters, history, and any associated files.
 
 ---
 
